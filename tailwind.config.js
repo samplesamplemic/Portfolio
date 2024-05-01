@@ -5,8 +5,13 @@ export default {
     fontFamily: {
       sansCondensed: ["Encode Sans Semi Condensed", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
+      keyframes: {},
+      animation: {},
+    },
   },
-  colors: {},
   plugins: [],
 };

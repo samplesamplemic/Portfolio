@@ -1,0 +1,16 @@
+
+// colors: {
+//   acquamarine: "#196c80",
+//   blueWater: "#0f414d",
+//   blueDeep: "#05161a",
+// },
+
+:root {
+  /* margin: 0;
+  height: -webkit-fill-available; */
+  /* background: radial-gradient(
+    rgba(25, 108, 128, 1) 0%,
+    rgba(15, 65, 77, 1) 40%,
+    rgba(5, 22, 26, 1) 100%
+  ); */
+}

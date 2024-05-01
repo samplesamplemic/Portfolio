@@ -3,11 +3,105 @@
 @tailwind utilities;
 
 :root {
-  margin: 0;
-  height: -webkit-fill-available;
-  background: radial-gradient(
-    rgba(25, 108, 128, 1) 0%,
-    rgba(15, 65, 77, 1) 40%,
-    rgba(5, 22, 26, 1) 100%
-  );
+}
+
+@layer {
+  html {
+    @apply text-white;
+    @apply font-sansCondensed !important;
+  }
+}
+
+.toX > :nth-child(1) {
+  animation: toX1 0.33s linear forwards;
+}
+.toX > :nth-child(2) {
+  animation: toX2 0.33s linear forwards;
+}
+.toX > :nth-child(3) {
+  animation: toX3 0.33s linear forwards;
+}
+.toX > :nth-child(4) {
+  animation: toX4 0.33s linear forwards;
+}
+
+.fromX > :nth-child(1) {
+  animation: fromX1 0.33s linear forwards;
+}
+.fromX > :nth-child(2) {
+  animation: fromX2 0.33s linear forwards;
+}
+.fromX > :nth-child(3) {
+  animation: fromX3 0.33s linear forwards;
+}
+.fromX > :nth-child(4) {
+  animation: fromX4 0.33s linear forwards;
+}
+
+@keyframes toX1 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(45deg);
+  }
+}
+@keyframes fromX1 {
+  0% {
+    transform: skewY(45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX2 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(-45deg);
+  }
+}
+@keyframes fromX2 {
+  0% {
+    transform: skewY(-45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX3 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(-45deg);
+  }
+}
+@keyframes fromX3 {
+  0% {
+    transform: skewY(-45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX4 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(45deg);
+  }
+}
+@keyframes fromX4 {
+  0% {
+    transform: skewY(45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
 }
