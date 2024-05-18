@@ -1,0 +1,170 @@
+.toX > :nth-child(1) {
+  animation: toX1 0.33s linear forwards;
+}
+.toX > :nth-child(2) {
+  animation: toX2 0.33s linear forwards;
+}
+.toX > :nth-child(3) {
+  animation: toX3 0.33s linear forwards;
+}
+.toX > :nth-child(4) {
+  animation: toX4 0.33s linear forwards;
+}
+
+.fromX > :nth-child(1) {
+  animation: fromX1 0.33s linear forwards;
+}
+.fromX > :nth-child(2) {
+  animation: fromX2 0.33s linear forwards;
+}
+.fromX > :nth-child(3) {
+  animation: fromX3 0.33s linear forwards;
+}
+.fromX > :nth-child(4) {
+  animation: fromX4 0.33s linear forwards;
+}
+
+@keyframes toX1 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(45deg);
+  }
+}
+@keyframes fromX1 {
+  0% {
+    transform: skewY(45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX2 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(-45deg);
+  }
+}
+@keyframes fromX2 {
+  0% {
+    transform: skewY(-45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX3 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(-45deg);
+  }
+}
+@keyframes fromX3 {
+  0% {
+    transform: skewY(-45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+@keyframes toX4 {
+  0% {
+    transform: skew(0deg, 0deg);
+  }
+  100% {
+    transform: skewY(45deg);
+  }
+}
+@keyframes fromX4 {
+  0% {
+    transform: skewY(45deg);
+  }
+  100% {
+    transform: skew(0deg, 0deg);
+  }
+}
+
+.navSmartphone {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  animation: smartphoneAnimation 0.33s linear forwards;
+}
+
+.nav2 {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  animation: smartphoneAnimationReverse 0.33s linear forwards;
+}
+
+@keyframes smartphoneAnimation {
+  0% {
+    transform: translateX(130px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes smartphoneAnimationReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(130px);
+  }
+}
+
+.home:active > .homeIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.home:active > .homeIcon {
+  display: none;
+}
+.home:hover > .homeIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.home:hover > .homeIcon {
+  display: none;
+}
+
+.source:active > .sourceIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.source:active > .sourceIcon {
+  display: none;
+}
+
+.source:hover > .sourceIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.source:hover > .sourceIcon {
+  display: none;
+}
+
+.news:active > .newsIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.news:active > .newsIcon {
+  display: none;
+}
+.news:hover > .newsIconHover {
+  display: flex;
+  cursor: pointer;
+}
+.news:hover > .newsIcon {
+  display: none;
+}

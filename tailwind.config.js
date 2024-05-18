@@ -12,6 +12,15 @@ export default {
       keyframes: {},
       animation: {},
     },
+    colors: {
+      primaryRadialBG: "#0E1216", //#010101
+      secondaryRadialBG: "#272E36", //#1a1f25
+      secondary: "#1E88C4",
+      tertiary: "#72653A",
+      white: "#FFFFFF",
+      navbarBG: "#9ca3af",
+      black: "#000000",
+    },
   },
   plugins: [],
 };
