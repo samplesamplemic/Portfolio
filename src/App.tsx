@@ -1,18 +1,17 @@
-import NavabarMinimal from "./components/navbar/navbarMinimal";
-import NavbarSmartphone from "./components/navbar/navbarSmartphone";
-import Photo from "./components/photo/photo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Home from "./pages/home";
+import AboutMe from "./pages/aboutMe";
 
 function App() {
   return (
     <>
-      {/* <NavbarDesktop /> */}
-      <div className="flex h-full items-center">
-        <NavabarMinimal />
-        {/* <Photo /> */}
-        {/* <Work /> */}
-        <NavbarSmartphone />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/aboutMe" element={<AboutMe />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

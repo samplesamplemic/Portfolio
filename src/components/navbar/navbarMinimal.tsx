@@ -1,64 +1,67 @@
+import { Link } from "react-router-dom";
 import { HomeIcon as Home } from "@heroicons/react/24/solid";
 import { InboxIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
+import "./navbar.css";
 import Photo from "../photo/photo";
 import iconLinkedin from "../../assets/icon-linkedin.png";
 import iconLinkedinHover from "../../assets/icon-linkedin-hover.png";
 import iconGithub from "../../assets/icno-github.png";
 import iconGithubHover from "../../assets/icon-github-hover.png";
+import { ReactElement } from "react";
 
-function NavabarMinimal() {
+function NavabarMinimal(props: { childComponent: ReactElement }) {
   return (
     <>
-      <div className="w-full flex justify-between items-center">
+      <div className="w-full flex flex-1 justify-between items-center">
         <div className="flex flex-col font-medium p-10 gap-16 border-r-2 border-tertiary">
           <div>
-            <a
-              href=""
-              className="hover:text-secondary hover:border-b-[3px] border-secondary"
+            <Link
+              to="/"
+              className="homeLink hover:text-secondary hover:border-b-[3px] border-secondary"
             >
               <Home className="w-6 hover:text-secondary" title="Home" />
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href=""
-              className="hover:text-secondary hover:border-b-[3px] border-setext-secondary"
+            <Link
+              to="/aboutMe"
+              className="hover:text-secondary hover:border-b-[3px] border-secondary"
             >
-              <EnvelopeIcon
+              <UserCircleIcon
                 className="w-6 hover:text-secondary "
                 title="Contact me"
               />
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href=""
+            <Link
+              to="/"
               className="hover:text-secondary hover:border-b-[3px] border-setext-secondary"
             >
               <InboxIcon
                 className="w-6 hover:text-secondary "
                 title="Projects"
               />
-              {/* Source */}
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href=""
+            <Link
+              to="/"
               className="hover:text-secondary hover:border-b-[3px] border-secondary"
             >
-              <UserCircleIcon
+              <EnvelopeIcon
                 className="w-6 hover:text-secondary "
                 title="About me"
               />
-            </a>
+            </Link>
           </div>
         </div>
-        <div>
+        {/* <div>
           <Photo />
-        </div>
+        </div> */}
+        <div className="center">{props.childComponent}</div>
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
           <div className="group cursor-pointer">

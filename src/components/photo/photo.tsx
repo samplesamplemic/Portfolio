@@ -3,44 +3,44 @@ import photo from "../../assets/logo_dragon_youtube.png";
 function Photo() {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center text-center md:items-start md:text-start">
-        <div className="flex flex-col gap-2 ">
-          <div className="flex gap-8">
-            <div className="flex-none md:self-center hidden md:flex">
-              <img
-                className="w-20 md:w-24 rounded-full border-[1.5px] shadow-lg"
-                src={photo}
-                alt="me"
-              />
-            </div>
-            <div className="">
-              {/* <div className="md:text-3xl text-xl py-1 md:p-2 w-full text-center font-medium bg-navbarBG rounded-md backdrop-blur-sm bg-opacity-10">
+      {/* <div className="flex flex-col md:flex-row items-center text-center md:items-start md:text-start"> */}
+      {/* <div className="flex flex-col gap-2 "> */}
+      <div className="flex flex-col gap-4 text-center">
+        <div className="flex-none md:self-center hidden md:flex">
+          <img
+            className="w-20 md:w-24 rounded-full border-[1.5px] shadow-lg"
+            src={photo}
+            alt="me"
+          />
+        </div>
+        <div className="">
+          {/* <div className="md:text-3xl text-xl py-1 md:p-2 w-full text-center font-medium bg-navbarBG rounded-md backdrop-blur-sm bg-opacity-10">
                 Hi, I'm a{" "}
                 <span className="text-secondary underline underline-offset-2 md:text-4xl text-xl">
                   Full-Stack Developer
                 </span>{" "}
                 from Italy
               </div> */}
-              <div className="flex gap-8 justify-center md:justify-start p-2 md:mt-2">
-                <span className="md:text-4xl text-3xl text-center font-extrabold">
-                  Michele La Torre
-                </span>
-              </div>
-              <div>
-                <span className="text-secondary md:text-4xl text-xl">
-                  Full-Stack Developer
-                </span>
-              </div>
-            </div>
+          <div className="flex gap-8 justify-center md:justify-start p-2 md:mt-2">
+            <span className="md:text-5xl text-3xl text-center font-bold tracking-wide">
+              Michele La Torre
+            </span>
           </div>
-          <div className="flex-none md:self-start md:hidden self-center mt-4">
-            <img
-              className="w-20 md:w-24 rounded-full border-[1.5px] shadow-lg"
-              src={photo}
-              alt="me"
-            />
+          <div>
+            <span className="text-secondary md:text-4xl text-xl font-medium tracking-wide">
+              Full-Stack Developer
+            </span>
           </div>
-          {/* <div className="flex flex-col md:mt-20 mt-14 text-start">
+        </div>
+      </div>
+      <div className="flex-none md:self-start md:hidden self-center mt-4">
+        <img
+          className="w-20 md:w-24 rounded-full border-[1.5px] shadow-lg"
+          src={photo}
+          alt="me"
+        />
+      </div>
+      {/* <div className="flex flex-col md:mt-20 mt-14 text-start">
              <div className="text-xl font-semibold">
               <span className="text-tertiary">{"< "}</span>About me{" "}
               <span className="text-tertiary">{" /> "}</span>
@@ -66,8 +66,8 @@ function Photo() {
               </div>
             </div>
           </div> */}
-        </div>
-      </div>
+      {/* </div>
+      </div> */}
     </>
   );
 }

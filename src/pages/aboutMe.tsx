@@ -1,16 +1,18 @@
+import Work from "../components/aboutMe/work";
 import MultiPage from "../components/navbar/multiPage";
-import NavabarMinimal from "../components/navbar/navbarMinimal";
+import NavbarMinimal from "../components/navbar/navbarMinimal";
 import NavbarSmartphone from "../components/navbar/navbarSmartphone";
-import Photo from "../components/photo/photo";
 import "../index.css";
 
-function Home() {
+function AboutMe() {
   return (
     <>
       {/* <NavbarDesktop /> */}
       <div className="flex flex-col h-full items-center">
         <MultiPage />
-        <NavabarMinimal childComponent={<Photo />} />
+        <NavbarMinimal childComponent={<Work />} />
+
+        {/* <Work /> */}
         {/* <Photo /> */}
         {/* <Work /> */}
         <NavbarSmartphone />
@@ -19,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AboutMe;
