@@ -4,7 +4,6 @@ import { InboxIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import "./navbar.css";
-import Photo from "../photo/photo";
 import iconLinkedin from "../../assets/icon-linkedin.png";
 import iconLinkedinHover from "../../assets/icon-linkedin-hover.png";
 import iconGithub from "../../assets/icno-github.png";
@@ -31,7 +30,7 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
             >
               <UserCircleIcon
                 className="w-6 hover:text-secondary "
-                title="Contact me"
+                title="About me"
               />
             </Link>
           </div>
@@ -53,7 +52,7 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
             >
               <EnvelopeIcon
                 className="w-6 hover:text-secondary "
-                title="About me"
+                title="Contact me"
               />
             </Link>
           </div>
@@ -68,11 +67,13 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
             <img
               src={iconLinkedinHover}
               alt="LinkedIn"
+              title="Linkedln"
               className="w-6 hidden group-hover:block"
             />
             <img
               src={iconLinkedin}
               alt="LinkedIn"
+              title="Linkedln"
               className="w-6 group-hover:hidden"
             />
           </div>
@@ -80,11 +81,13 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
             <img
               src={iconGithubHover}
               alt="Github"
+              title="Source"
               className="w-6 hidden group-hover:block"
             />
             <img
               src={iconGithub}
               alt="Github"
+              title="Source"
               className="w-6 group-hover:hidden"
             />
           </div>

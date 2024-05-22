@@ -1,14 +1,16 @@
+import WorkExp from "./workExp";
+
 function Work() {
   return (
     <>
-      <div className="mx-10 flex flex-col gap-8 items-center">
-        <div className=" flex flex-col gap-2 md:w-[60%]">
-          <div className="text-xl font-semibold">
+      <div className="mx-10 flex flex-col gap-8 items-center text-center">
+        <div className=" flex flex-col gap-2 md:w-[80%]">
+          <div className="text-xl font-semibold flex flex-col items-center">
             About me
             <hr className="w-14 h-[.2rem] bg-white border-0 rounded-sm bg-opacity-40" />
           </div>
           <div className="text-">
-            <span className="text-lg text-secondary">
+            <span className="text-lg font-medium text-secondary">
               Jr. Software Developer
             </span>
             <br />
@@ -17,21 +19,12 @@ function Work() {
             looking for personal realization and professional development.
           </div>
         </div>
-        <div className=" flex flex-col gap-2 md:w-[60%]">
-          <div className="text-xl font-semibold">
+        <div className="flex flex-col gap-2 md:w-[80%] items-center">
+          <div className="text-xl font-semibold flex flex-col">
             Work
             <hr className="w-14 h-[.2rem] bg-white border-0 rounded-sm bg-opacity-40" />
           </div>
-          <div className="text-">
-            <span className="text-lg text-secondary">
-              Capgemini - Analist Consultant
-            </span>
-            <br />
-            <span className="italic">Apprenticeship</span>
-            <br />
-            <span className="font-medium">2022 </span>
-            Nov - Current
-          </div>
+          <WorkExp />
         </div>
       </div>
     </>

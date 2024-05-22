@@ -14,3 +14,49 @@
     rgba(5, 22, 26, 1) 100%
   ); */
 }
+
+{/* <div className="flex flex-col items-center">
+            <div className="text-lg font-medium text-secondary">
+              Capgemini - Analist Consultant
+            </div>
+            <div>
+              <span className="italic">Apprenticeship </span>
+            </div>
+            <div className="flex gap-4 mb-1">
+              <span className="font-medium">2022 </span>
+              <span>Nov - Current</span>
+            </div>
+          </div>
+          <hr className="w-1 h-1 bg-white border-0 rounded-sm bg-opacity-40" />
+          <div className="flex flex-col items-center">
+            <div className="text-lg font-medium text-secondary">
+              Full-Stack Developer
+            </div>
+            <div className="italic">
+              <a href="https://www.develhope.co/">Develhope Academy</a>
+            </div>
+            <div className="flex gap-4 mb-1">
+              <span className="font-medium">2022 </span>
+              <span>Apr - Nov</span>
+            </div>
+            <div>
+              Web application development using agile methodology. Horizontal
+              tutoring for other students of Full-Stack Web Developer courses.
+            </div>
+          </div>
+          <hr className="w-1 h-1 bg-white border-0 rounded-sm bg-opacity-40" />
+          <div className="flex flex-col items-center">
+            <div className="text-lg font-medium text-secondary">
+              Information Technology Assistant
+            </div>
+            <div className="italic">WIT Informatica · Stage</div>
+            <div className="flex gap-4 mb-1">
+              <span className="font-medium">2021</span>
+              <span>Nov - Mar</span>
+            </div>
+          </div>
+          <hr className="w-1 h-1 bg-white border-0 rounded-sm bg-opacity-40" /> */}
+
+          className={
+                  `${item.workLink?.includes("https")}` ? "hover:underline" : ""
+                }

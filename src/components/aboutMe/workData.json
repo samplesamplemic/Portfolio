@@ -1,0 +1,23 @@
+[
+  {
+    "workPosition": "Capgemini - Analist Consultant",
+    "workTypology": "Apprenticeship",
+    "workYear": "2022",
+    "workMonth": "Nov - Current",
+    "workDescription": "test"
+  },
+  {
+    "workPosition": "Full-Stack Developer",
+    "workTypology": "Develhope Academy",
+    "workYear": "2022",
+    "workMonth": "Apr - Nov",
+    "workDescription": "Web application development using agile methodology. Horizontal tutoring for other students of Full-Stack Web Developer courses."
+  },
+  {
+    "workPosition": "Information Technology Assistant",
+    "workTypology": "WIT Informatica · Stage",
+    "workYear": "2021",
+    "workMonth": "Nov - Mar",
+    "workDescription": "Consultancy to partner companies for software and hardware solutions."
+  }
+]
