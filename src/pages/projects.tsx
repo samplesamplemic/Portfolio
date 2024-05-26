@@ -1,24 +1,24 @@
 import MultiPage from "../components/navbar/multiPage";
 import NavabarMinimal from "../components/navbar/navbarMinimal";
 import NavbarSmartphone from "../components/navbar/navbarSmartphone";
-import Photo from "../components/photo/photo";
 import Slider from "../components/projects/carousel";
+// import ProjectsCarousel from "../components/projects/projects";
+// import ProjectsCustomCarousel from "../components/projects/projects copy";
 import "../index.css";
 
-function Home() {
+function Projects() {
   return (
     <>
       {/* <NavbarDesktop /> */}
       <div className="flex flex-col h-full items-center">
         <MultiPage />
-        <NavabarMinimal childComponent={<Photo />} />
-        <NavbarSmartphone />
+        <NavabarMinimal childComponent={<Slider />} />
         {/* <Photo /> */}
         {/* <Work /> */}
-        {/* <Slider /> */}
+        <NavbarSmartphone />
       </div>
     </>
   );
 }
 
-export default Home;
+export default Projects;

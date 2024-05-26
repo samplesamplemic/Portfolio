@@ -1,11 +1,12 @@
 import photo from "../../assets/logo_dragon_youtube.png";
+import Slider from "../projects/carousel";
 
 function Photo() {
   return (
     <>
       {/* <div className="flex flex-col md:flex-row items-center text-center md:items-start md:text-start"> */}
       {/* <div className="flex flex-col gap-2 "> */}
-      <div className="flex flex-col gap-4 text-center">
+      <div className="flex flex-col gap-4 text-center mb-4">
         <div className="flex-none md:self-center hidden md:flex">
           <img
             className="w-20 md:w-24 rounded-full border-[1.5px] shadow-lg"
@@ -13,7 +14,7 @@ function Photo() {
             alt="me"
           />
         </div>
-        <div className="">
+        <div className="self-center">
           {/* <div className="md:text-3xl text-xl py-1 md:p-2 w-full text-center font-medium bg-navbarBG rounded-md backdrop-blur-sm bg-opacity-10">
                 Hi, I'm a{" "}
                 <span className="text-secondary underline underline-offset-2 md:text-4xl text-xl">
@@ -32,6 +33,7 @@ function Photo() {
             </span>
           </div>
         </div>
+        {/* <hr className="w-14 h-[.2rem] self-center bg-white border-0 rounded-sm bg-opacity-40" /> */}
       </div>
       <div className="flex-none md:self-start md:hidden self-center mt-4">
         <img
@@ -40,6 +42,7 @@ function Photo() {
           alt="me"
         />
       </div>
+      <Slider />
       {/* <div className="flex flex-col md:mt-20 mt-14 text-start">
              <div className="text-xl font-semibold">
               <span className="text-tertiary">{"< "}</span>About me{" "}

@@ -9,6 +9,7 @@ import iconLinkedinHover from "../../assets/icon-linkedin-hover.png";
 import iconGithub from "../../assets/icno-github.png";
 import iconGithubHover from "../../assets/icon-github-hover.png";
 import { ReactElement } from "react";
+import Slider from "../projects/carousel";
 
 function NavabarMinimal(props: { childComponent: ReactElement }) {
   return (
@@ -36,7 +37,7 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
           </div>
           <div>
             <Link
-              to="/"
+              to="/projects"
               className="hover:text-secondary hover:border-b-[3px] border-setext-secondary"
             >
               <InboxIcon
@@ -60,7 +61,7 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
         {/* <div>
           <Photo />
         </div> */}
-        <div className="center">{props.childComponent}</div>
+        <div className="center w-[80%]">{props.childComponent}</div>
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
           <div className="group cursor-pointer">

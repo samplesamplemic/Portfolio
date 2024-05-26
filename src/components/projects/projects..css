@@ -1,0 +1,36 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+} */
+
+.slider {
+  margin: 0 1rem;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+.slider img {
+  width: 100%;
+  max-width: 15rem;
+  border-radius: 10px;
+}
+
+.react-multi-carousel-list {
+  /* padding-bottom: 2rem; */
+}
+.react-multi-carousel-track {
+  /* display: flex; */
+  align-items: center;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}
