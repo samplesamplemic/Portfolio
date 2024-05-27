@@ -1,7 +1,7 @@
-import iconLinkedin from "../../assets/icon-linkedin.png";
-import iconLinkedinHover from "../../assets/icon-linkedin-hover.png";
-import iconGithub from "../../assets/icno-github.png";
-import iconGithubHover from "../../assets/icon-github-hover.png";
+import iconLinkedin from "../../assets/icons/icon-linkedin.png";
+import iconLinkedinHover from "../../assets/icons/icon-linkedin-hover.png";
+import iconGithub from "../../assets/icons/icno-github.png";
+import iconGithubHover from "../../assets/icons/icon-github-hover.png";
 
 function NavbarDesktop() {
   return (

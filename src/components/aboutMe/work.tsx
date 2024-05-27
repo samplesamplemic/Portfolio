@@ -1,9 +1,12 @@
+import workData from "../../assets/data/workData";
 import WorkExp from "./workExp";
+import { AboutMe } from "../../model/workObject";
 
 function Work() {
+  const aboutMe: AboutMe = workData.aboutMe;
   return (
     <>
-      <div className="mx-10 flex flex-col gap-8 items-center text-center">
+      <div className="w-[60%] m-auto flex flex-col gap-8 items-center text-center">
         <div className=" flex flex-col gap-2 md:w-[80%]">
           <div className="text-xl font-semibold flex flex-col items-center">
             About me
@@ -11,12 +14,10 @@ function Work() {
           </div>
           <div className="text-">
             <span className="text-lg font-medium text-secondary">
-              Jr. Software Developer
+              {aboutMe.work}
             </span>
             <br />
-            From humanities studies to the IT sector, I have defined a great
-            passion for building digital services and infrastructures. I'm
-            looking for personal realization and professional development.
+            {aboutMe.goalDescription}
           </div>
         </div>
         <div className="flex flex-col gap-2 md:w-[80%] items-center">

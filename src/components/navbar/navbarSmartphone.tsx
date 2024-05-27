@@ -3,8 +3,8 @@ import { HomeIcon as Home } from "@heroicons/react/24/outline";
 // import { ArchiveBoxIcon } from "@heroicons/react/24/solid";
 import { NewspaperIcon as NewspaperIconHover } from "@heroicons/react/24/solid";
 import { NewspaperIcon } from "@heroicons/react/24/outline";
-import githubLogo from "../../assets/icno-github.png";
-import githubLogoHover from "../../assets/icon-github-hover.png";
+import githubLogo from "../../assets/icons/icno-github.png";
+import githubLogoHover from "../../assets/icons/icon-github-hover.png";
 import "./navbar.css";
 
 function NavbarSmartphone() {

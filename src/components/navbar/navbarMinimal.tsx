@@ -4,14 +4,13 @@ import { InboxIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 import "./navbar.css";
-import iconLinkedin from "../../assets/icon-linkedin.png";
-import iconLinkedinHover from "../../assets/icon-linkedin-hover.png";
-import iconGithub from "../../assets/icno-github.png";
-import iconGithubHover from "../../assets/icon-github-hover.png";
+import iconLinkedin from "../../assets/icons/icon-linkedin.png";
+import iconLinkedinHover from "../../assets/icons/icon-linkedin-hover.png";
+import iconGithub from "../../assets/icons/icno-github.png";
+import iconGithubHover from "../../assets/icons/icon-github-hover.png";
 import { ReactElement } from "react";
-import Slider from "../projects/carousel";
 
-function NavabarMinimal(props: { childComponent: ReactElement }) {
+function NavbarMinimal(props: { childComponent: ReactElement }) {
   return (
     <>
       <div className="w-full flex flex-1 justify-between items-center">
@@ -37,7 +36,7 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
           </div>
           <div>
             <Link
-              to="/projects"
+              to="/"
               className="hover:text-secondary hover:border-b-[3px] border-setext-secondary"
             >
               <InboxIcon
@@ -58,9 +57,6 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
             </Link>
           </div>
         </div>
-        {/* <div>
-          <Photo />
-        </div> */}
         <div className="center w-[80%]">{props.childComponent}</div>
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
@@ -99,4 +95,4 @@ function NavabarMinimal(props: { childComponent: ReactElement }) {
   );
 }
 
-export default NavabarMinimal;
+export default NavbarMinimal;

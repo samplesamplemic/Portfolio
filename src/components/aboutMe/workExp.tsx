@@ -1,11 +1,11 @@
-import workData from "./workData";
-import { WorkObject } from "./workObject";
+import workData from "../../assets/data/workData";
+import { WorkPosition } from "../../model/workObject";
 
 function WorkExp() {
-  const workDati: WorkObject[] = workData;
+  const workPositions: WorkPosition[] = workData.workPositions;
   return (
     <>
-      {workDati.map((item, index) => (
+      {workPositions.map((item, index) => (
         <div key={index} className="flex flex-col items-center gap-2">
           <div className="flex flex-col items-center">
             <div className="text-lg font-medium text-secondary">
