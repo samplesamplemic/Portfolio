@@ -6,7 +6,7 @@ function Work() {
   const aboutMe: AboutMe = workData.aboutMe;
   return (
     <>
-      <div className="w-[60%] m-auto flex flex-col gap-8 items-center text-center">
+      <div className="w-[70%] m-auto flex flex-col gap-8 items-center text-center">
         <div className=" flex flex-col gap-2 md:w-[80%]">
           <div className="text-xl font-semibold flex flex-col items-center">
             About me

@@ -1,6 +1,7 @@
 export interface WorkData {
   workPositions: WorkPosition[];
   aboutMe: AboutMe;
+  skills: Skill[];
 }
 
 export interface WorkPosition {
@@ -15,4 +16,8 @@ export interface WorkPosition {
 export interface AboutMe {
   work: string;
   goalDescription: string;
+}
+
+export interface Skill {
+  skillImageUrl: string;
 }

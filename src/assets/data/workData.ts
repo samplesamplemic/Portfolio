@@ -1,4 +1,15 @@
 import { WorkData } from "../../model/workObject";
+import angularIcon from "../../assets/carousel/angular.webp";
+import figmaIcon from "../../assets/carousel/figma.jpg";
+import flutterIcon from "../../assets/carousel/flutter.jpg";
+import htmlCssJsIcon from "../../assets/carousel/htmlCssJs.webp";
+import kotlinIcon from "../../assets/carousel/kotlin.jpg";
+import nodeIcon from "../../assets/carousel/node-logo.jpg";
+import reactIcon from "../../assets/carousel/Reactlogo.jpg";
+import springIcon from "../../assets/carousel/springJava.png";
+import tailwindIcon from "../../assets/carousel/tailwindcss.png";
+import sqlIcon from "../../assets/carousel/SQL.jpg";
+import agileIcon from "../../assets/carousel/agile.png";
 
 const workData: WorkData = {
   workPositions: [
@@ -32,6 +43,41 @@ const workData: WorkData = {
     goalDescription:
       "From humanities studies to the IT sector, I have defined a great passion for building digital services and infrastructures. I'm looking for personal realization and professional development.",
   },
+  skills: [
+    {
+      skillImageUrl: angularIcon,
+    },
+    {
+      skillImageUrl: agileIcon,
+    },
+    {
+      skillImageUrl: sqlIcon,
+    },
+    {
+      skillImageUrl: figmaIcon,
+    },
+    {
+      skillImageUrl: flutterIcon,
+    },
+    {
+      skillImageUrl: htmlCssJsIcon,
+    },
+    {
+      skillImageUrl: kotlinIcon,
+    },
+    {
+      skillImageUrl: nodeIcon,
+    },
+    {
+      skillImageUrl: reactIcon,
+    },
+    {
+      skillImageUrl: springIcon,
+    },
+    {
+      skillImageUrl: tailwindIcon,
+    },
+  ],
 };
 
 export default workData;

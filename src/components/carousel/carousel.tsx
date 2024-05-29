@@ -1,64 +1,28 @@
-import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./projects..css";
-import angularIcon from "../../assets/carousel/angular.webp";
-import figmaIcon from "../../assets/carousel/figma.jpg";
-import flutterIcon from "../../assets/carousel/flutter.jpg";
-import htmlCssJsIcon from "../../assets/carousel/htmlCssJs.webp";
-import kotlinIcon from "../../assets/carousel/kotlin.jpg";
-import nodeIcon from "../../assets/carousel/node-logo.jpg";
-import reactIcon from "../../assets/carousel/Reactlogo.jpg";
-import springIcon from "../../assets/carousel/springJava.png";
-import tailwindIcon from "../../assets/carousel/tailwindcss.png";
+import "./carousel.css";
+import { Skill } from "../../model/workObject";
+import workData from "../../assets/data/workData";
 
+const carouselSkills: Skill[] = workData.skills;
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 5,
+    slidesToSlide: 5,
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 4,
+    slidesToSlide: 4,
   },
   mobile: {
     breakpoint: { max: 767, min: 464 },
     items: 2,
-    slidesToSlide: 3, // optional, default to 1.
+    slidesToSlide: 3,
   },
 };
-const sliderImageUrl = [
-  //First image url
-  {
-    url: angularIcon,
-  },
-  {
-    url: figmaIcon,
-  },
-  {
-    url: flutterIcon,
-  },
-  {
-    url: htmlCssJsIcon,
-  },
-  {
-    url: kotlinIcon,
-  },
-  {
-    url: nodeIcon,
-  },
-  {
-    url: reactIcon,
-  },
-  {
-    url: springIcon,
-  },
-  {
-    url: tailwindIcon,
-  },
-];
+
 const Slider = () => {
   return (
     <div className="parent ">
@@ -67,7 +31,7 @@ const Slider = () => {
         autoPlay={true}
         autoPlaySpeed={1000}
         keyBoardControl={true}
-        customTransition="transform 12s linear" //all/transform 15s work right
+        customTransition="all 10s linear" //all/transform 15s work right
         transitionDuration={12000}
         // rewindWithAnimation={true}
         swipeable={true}
@@ -79,10 +43,10 @@ const Slider = () => {
         // showDots={true}
         // dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => {
+        {carouselSkills.map((skill, index) => {
           return (
             <div className="slider" key={index}>
-              <img src={imageUrl.url} alt="movie" />
+              <img src={skill.skillImageUrl} alt="movie" />
             </div>
           );
         })}

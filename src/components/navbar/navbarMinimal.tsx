@@ -57,7 +57,8 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
             </Link>
           </div>
         </div>
-        <div className="center w-[80%]">{props.childComponent}</div>
+        <div className="center w-[70%]">{props.childComponent}</div>{" "}
+        {/* w-[80%]*/}
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
           <div className="group cursor-pointer">
