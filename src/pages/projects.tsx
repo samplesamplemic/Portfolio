@@ -1,17 +1,17 @@
 import MultiPage from "../components/navbar/multiPage";
-import NavbarSmartphone from "../components/navbar/navbarSmartphone";
+import NavbarMinimal from "../components/navbar/navbarMinimal";
 import "../index.css";
+import Projects from "../components/projects/projects";
 
-function Projects() {
+function ProjectsPage() {
   return (
     <>
       <div className="flex flex-col h-full items-center">
         <MultiPage />
-        {/* <NavbarMinimal childComponent={<Slider />} /> */}
-        <NavbarSmartphone />
+        <NavbarMinimal childComponent={<Projects />} />
       </div>
     </>
   );
 }
 
-export default Projects;
+export default ProjectsPage;

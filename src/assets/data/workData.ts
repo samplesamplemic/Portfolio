@@ -1,4 +1,4 @@
-import { WorkData } from "../../model/workObject";
+import { WorkObject } from "../../model/workObject";
 import angularIcon from "../../assets/carousel/angular.webp";
 import figmaIcon from "../../assets/carousel/figma.jpg";
 import flutterIcon from "../../assets/carousel/flutter.jpg";
@@ -11,7 +11,7 @@ import tailwindIcon from "../../assets/carousel/tailwindcss.png";
 import sqlIcon from "../../assets/carousel/SQL.jpg";
 import agileIcon from "../../assets/carousel/agile.png";
 
-const workData: WorkData = {
+const workData: WorkObject = {
   workPositions: [
     {
       workPosition: "Capgemini - Analyst Consultant",

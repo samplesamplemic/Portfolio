@@ -9,53 +9,33 @@ import iconLinkedinHover from "../../assets/icons/icon-linkedin-hover.png";
 import iconGithub from "../../assets/icons/icno-github.png";
 import iconGithubHover from "../../assets/icons/icon-github-hover.png";
 import { ReactElement } from "react";
+import { PortfolioObject } from "../../model/workObject";
+import { PortfolioData } from "../../assets/data/portfoglioData";
 
 function NavbarMinimal(props: { childComponent: ReactElement }) {
+  const portfolioData: PortfolioObject = PortfolioData;
+
   return (
     <>
       <div className="w-full flex flex-1 justify-between items-center">
         <div className="flex flex-col font-medium p-10 gap-16 border-r-2 border-tertiary">
-          <div>
-            <Link
-              to="/"
-              className="homeLink hover:text-secondary hover:border-b-[3px] border-secondary"
-            >
-              <Home className="w-6 hover:text-secondary" title="Home" />
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/aboutMe"
-              className="hover:text-secondary hover:border-b-[3px] border-secondary"
-            >
-              <UserCircleIcon
-                className="w-6 hover:text-secondary "
-                title="About me"
-              />
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/"
-              className="hover:text-secondary hover:border-b-[3px] border-setext-secondary"
-            >
-              <InboxIcon
-                className="w-6 hover:text-secondary "
-                title="Projects"
-              />
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/"
-              className="hover:text-secondary hover:border-b-[3px] border-secondary"
-            >
-              <EnvelopeIcon
-                className="w-6 hover:text-secondary "
-                title="Contact me"
-              />
-            </Link>
-          </div>
+          {portfolioData.navbarItems.map((navbarItem) => {
+            return (
+              <div>
+                <Link
+                  to={navbarItem.link}
+                  className="homeLink hover:text-secondary hover:border-b-[3px] border-secondary"
+                >
+                  {
+                    <navbarItem.icon
+                      className="w-6 hover:text-secondary"
+                      title={navbarItem.title}
+                    />
+                  }
+                </Link>
+              </div>
+            );
+          })}
         </div>
         <div className="center w-[70%]">{props.childComponent}</div>{" "}
         {/* w-[80%]*/}
