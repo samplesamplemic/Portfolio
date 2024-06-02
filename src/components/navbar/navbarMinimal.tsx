@@ -24,7 +24,7 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
               <div>
                 <Link
                   to={navbarItem.link}
-                  className="homeLink hover:text-secondary hover:border-b-[3px] border-secondary"
+                  className="homeLink hover:animate-bounce hover:text-secondary hover:border-b-[3px] border-secondary"
                 >
                   {
                     <navbarItem.icon
