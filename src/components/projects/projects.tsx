@@ -4,86 +4,67 @@ import { useState } from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { CustomZoomContent } from "./projectZommCustom";
+import dictionaryApp from "../../assets/projects/dictionaryDesign.png";
+import Carousel from "react-multi-carousel";
+import workData from "../../assets/data/workData";
+import { Skill } from "../../model/workObject";
+import "react-multi-carousel/lib/styles.css";
+// import "../carousel/carousel.css";
 
 function Projects() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+    // tablet: {
+    //   breakpoint: { max: 1024, min: 768 },
+    //   items: 4,
+    //   slidesToSlide: 4,
+    // },
+    // mobile: {
+    //   breakpoint: { max: 767, min: 464 },
+    //   items: 2,
+    //   slidesToSlide: 3,
+    // },
+  };
+  const carouselSkills: Skill[] = workData.skills;
+
   const [toX, setAnimation] = useState(true);
   const handleAnimation = () => {
     setAnimation(!toX);
   };
   return (
     <>
-      <div className="projects flex flex-col flex-wrap gap-8 items-center justify-center text-center">
-        <div className=" flex justify-between">
-          <div className="w-[45%] flex flex-col gap-4 p-6 items-center">
-            <div
-              className={
-                // ` ${ !toX ? "test" : "test2"}
-                "w-[50%] flex flex-col gap-1 items-center cursor-pointer"
-              }
-            >
-              {/* <XMarkIcon
-                onClick={handleAnimation}
-                className={`${
-                  !toX ? "" : "hidden"
-                } w-4 cursor-pointer hover:bg-secondary rounded-sm`}
-              ></XMarkIcon> */}
-
-              <Zoom zoomMargin={40} ZoomContent={CustomZoomContent}>
-                <img
-                  src={flutterApp}
-                  alt="test"
-                  onClick={handleAnimation}
-                  className=" !bg-secondaryRadialBG"
-                  // className={`${!toX ? "test" : ""} w-[50%] `}
-                />
-              </Zoom>
-            </div>
-            <div className="">
-              <span>Title</span>
-              <span>
-                Kotlin App - Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </span>
-            </div>
-          </div>
-          <div className="w-[45%] flex flex-col gap-4 p-6 items-center">
-            <img src={flutterApp} alt="" className="w-[50%]" />
-            <div>
-              <span>Title</span>
-              <span>
-                Kotlin App - Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </span>
-            </div>
-          </div>
+      {/* <div className="projects flex flex-col flex-wrap gap-8 items-center justify-center text-center"> */}
+      <div className="flex flex-col">
+        <div className="parent ">
+          <Carousel responsive={responsive}>
+            {carouselSkills.map((skill, index) => {
+              return (
+                <div className="sliderProj" key={index}>
+                  <Zoom>
+                    <img src={skill.skillImageUrl} alt="movie" />
+                  </Zoom>
+                </div>
+              );
+            })}
+          </Carousel>
         </div>
-        <div className=" flex justify-between">
-          <div className="w-[45%] flex flex-col gap-4 p-6 items-center">
-            <img src={flutterApp} alt="" className="w-[50%]" />
-            <div>
-              <span>Title</span>
-              <span>
-                Kotlin App - Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </span>
-            </div>
-          </div>
-          <div className="w-[45%] flex flex-col gap-4 p-6 items-center">
-            <img src={flutterApp} alt="" className="w-[50%]" />
-            <div>
-              <span>Title</span>
-              <span>
-                Kotlin App - Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </span>
-            </div>
-          </div>
+        <div className="parent">
+          <Carousel responsive={responsive}>
+            {carouselSkills.map((skill, index) => {
+              return (
+                <div className="sliderProj" key={index}>
+                  <img src={skill.skillImageUrl} alt="movie" />
+                </div>
+              );
+            })}
+          </Carousel>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 }

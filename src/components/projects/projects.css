@@ -48,3 +48,38 @@
   display: flex;
   align-items: flex-end;
 }
+
+.sliderProj {
+  margin: 0 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.sliderProj img {
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 10px;
+}
+
+.react-multi-carousel-list {
+  /* padding-bottom: 2rem; */
+}
+
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+}
+.react-multi-carousel-track {
+  /* display: flex; */
+  align-items: center;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}

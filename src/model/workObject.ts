@@ -36,3 +36,10 @@ export interface NavbarObject {
   link: string;
   title: string;
 }
+
+export interface ProjectObject {
+  img: string;
+  title: string;
+  description: string;
+  githubSpurce: string;
+}
