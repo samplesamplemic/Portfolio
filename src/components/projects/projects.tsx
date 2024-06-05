@@ -3,11 +3,12 @@ import flutterApp from "../../assets/projects/flutterApp.png";
 import { useState } from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { CustomZoomContent } from "./projectZommCustom";
+import { CustomZoomContent } from "./projectZoomCustom";
 import dictionaryApp from "../../assets/projects/dictionaryDesign.png";
 import Carousel from "react-multi-carousel";
 import workData from "../../assets/data/workData";
-import { Skill } from "../../model/workObject";
+import projectData from "../../assets/data/projectsData";
+import { ProjectItems, ProjectObject, Skill } from "../../model/workObject";
 import "react-multi-carousel/lib/styles.css";
 // import "../carousel/carousel.css";
 
@@ -29,26 +30,29 @@ function Projects() {
     //   slidesToSlide: 3,
     // },
   };
+  const projectsData: ProjectItems = projectData;
   const carouselSkills: Skill[] = workData.skills;
 
-  const [toX, setAnimation] = useState(true);
-  const handleAnimation = () => {
-    setAnimation(!toX);
-  };
+  // const [toX, setAnimation] = useState(true);
+  // const handleAnimation = () => {
+  //   setAnimation(!toX);
+  // };
   return (
     <>
       {/* <div className="projects flex flex-col flex-wrap gap-8 items-center justify-center text-center"> */}
       <div className="flex flex-col">
         <div className="parent ">
           <Carousel responsive={responsive}>
-            {carouselSkills.map((skill, index) => {
-              return (
-                <div className="sliderProj" key={index}>
-                  <Zoom>
-                    <img src={skill.skillImageUrl} alt="movie" />
-                  </Zoom>
-                </div>
-              );
+            {projectsData.projectItems.map((skill, index) => {
+              return skill.img.map((el) => {
+                return (
+                  <div className="sliderProj" key={index}>
+                    <Zoom>
+                      <img src={el} alt="movie" />
+                    </Zoom>
+                  </div>
+                );
+              });
             })}
           </Carousel>
         </div>

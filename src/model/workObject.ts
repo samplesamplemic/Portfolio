@@ -37,9 +37,12 @@ export interface NavbarObject {
   title: string;
 }
 
+export interface ProjectItems {
+  projectItems: ProjectObject[];
+}
 export interface ProjectObject {
-  img: string;
+  img: string[];
   title: string;
   description: string;
-  githubSpurce: string;
+  githubSource: string;
 }
