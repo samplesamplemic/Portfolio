@@ -102,3 +102,42 @@ photo.tsx --
           </div> */}
       {/* </div>
       </div> */}
+      
+
+.test {
+  animation: zoomIn 0.33s linear forwards;
+}
+
+.test2 {
+  animation: zoomOut 0.33s linear forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+  }
+  100% {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(2);
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+    position: relative;
+  }
+}

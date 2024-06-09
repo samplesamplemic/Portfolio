@@ -13,19 +13,19 @@ const projectData: ProjectItems = {
       img: [flutterApp],
       title: "Flutter App",
       description: "Youtube ",
-      githubSource: "",
+      githubSource: "https://github.com/samplesamplemic/Yotube_simil",
     },
     {
       img: [dictionaryApp],
       title: "Kotlin App",
       description: "",
-      githubSource: "",
+      githubSource: "https://github.com/samplesamplemic/Dictionary_2.0",
     },
     {
       img: [garageApp, garageApp1, garageApp2, garageApp3, garageApp4],
-      title: "Garage App",
+      title: "Garage API",
       description: "",
-      githubSource: "",
+      githubSource: "https://github.com/samplesamplemic/Garage-API",
     },
     // {
     //   img: [],

@@ -10,6 +10,7 @@ import workData from "../../assets/data/workData";
 import projectData from "../../assets/data/projectsData";
 import { ProjectItems, ProjectObject, Skill } from "../../model/workObject";
 import "react-multi-carousel/lib/styles.css";
+import CustomZoomImage from "./CustomZoomImage";
 // import "../carousel/carousel.css";
 
 function Projects() {
@@ -40,8 +41,8 @@ function Projects() {
   return (
     <>
       {/* <div className="projects flex flex-col flex-wrap gap-8 items-center justify-center text-center"> */}
-      <div className="flex flex-col">
-        <div className="parent ">
+      <div className="flex flex-row flex-wrap justify-between gap-4">
+        {/* <div className="parent ">
           <Carousel responsive={responsive}>
             {projectsData.projectItems.map((skill, index) => {
               return skill.img.map((el) => {
@@ -55,8 +56,8 @@ function Projects() {
               });
             })}
           </Carousel>
-        </div>
-        <div className="parent">
+        </div> */}
+        {/* <div className="parent">
           <Carousel responsive={responsive}>
             {carouselSkills.map((skill, index) => {
               return (
@@ -66,7 +67,37 @@ function Projects() {
               );
             })}
           </Carousel>
-        </div>
+        </div> */}
+        {projectsData.projectItems.map((el, index) => {
+          return (
+            <div className="parent w-[45%] flex flex-col">
+              <Carousel responsive={responsive}>
+                {el.img.map((img) => {
+                  return (
+                    <div className="sliderProj" key={index}>
+                      <Zoom ZoomContent={CustomZoomContent}>
+                        <img src={img} alt={el.title} />
+                        {/* <CustomZoomImage
+                          img={el}
+                          title={el.title}
+                          description={el.description}
+                          githubSource={el.githubSource}
+                        /> */}
+                      </Zoom>
+                    </div>
+                  );
+                })}
+              </Carousel>
+              <a
+                href={el.githubSource}
+                target="_blank"
+                className="text-center m-4 text-lg rounded-sm hover:bg-secondary hover:transition-all hover:duration-300"
+              >
+                {el.title}
+              </a>
+            </div>
+          );
+        })}
       </div>
       {/* </div> */}
     </>

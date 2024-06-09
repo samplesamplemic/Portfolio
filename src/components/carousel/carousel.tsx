@@ -7,14 +7,14 @@ import workData from "../../assets/data/workData";
 const carouselSkills: Skill[] = workData.skills;
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 5,
-    slidesToSlide: 5,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
+    breakpoint: { max: 3000, min: 1200 },
     items: 4,
     slidesToSlide: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1200, min: 768 },
+    items: 3,
+    slidesToSlide: 3,
   },
   mobile: {
     breakpoint: { max: 767, min: 464 },

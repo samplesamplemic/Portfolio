@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect } from "react";
 import "react-medium-image-zoom/dist/styles.css";
+import { ProjectObject } from "../../model/workObject";
 
 export const CustomZoomContent = ({
   buttonUnzoom, // default unzoom button
@@ -30,18 +31,14 @@ export const CustomZoomContent = ({
         <figcaption
           className={`${classCaption} z-10 bg-[rgba(0,0,0)] text-white p-8`}
         >
-          That Wanaka Tree, also known as the Wanaka Willow, is a willow tree
-          located at the southern end of Lake Wānaka in the Otago region of New
-          Zealand.
-          <cite className="zoom-caption-cite">
-            Wikipedia,{" "}
-            <a
-              className="zoom-caption-link"
-              href="https://en.wikipedia.org/wiki/That_Wanaka_Tree"
-            >
-              That Wanaka Tree
+          {console.log(img)}
+          {img.props.alt}
+          {/* <cite className="zoom-caption-cite">
+            <br />
+            <a className="zoom-caption-link" href={img.props.id}>
+              {img.props.alt}
             </a>
-          </cite>
+          </cite> */}
         </figcaption>
       </figure>
     </>
