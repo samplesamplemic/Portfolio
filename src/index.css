@@ -8,9 +8,6 @@
   padding: 0;
 }
 
-:root {
-}
-
 @layer {
   html {
     @apply text-white;

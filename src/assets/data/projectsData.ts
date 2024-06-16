@@ -1,4 +1,4 @@
-import { ProjectItems } from "../../model/workObject";
+import { ProjectItems } from "../../model/dataInterfaces";
 import flutterApp from "../projects/flutterApp.png";
 import dictionaryApp from "../projects/dictionaryDesign.png";
 import garageApp from "../projects/garage-API.png";

@@ -1,0 +1,49 @@
+@mixin keyframesToX($name, $skewY) {
+  @keyframes #{$name} {
+    0% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skewY($skewY);
+    }
+  }
+}
+@mixin keyframesFromX($name, $skewY) {
+  @keyframes #{$name} {
+    0% {
+      transform: skewY($skewY);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
+}
+
+@mixin animate($animation) {
+  animation: $animation 0.33s linear forwards;
+}
+
+.toX {
+  & > :nth-child(1),
+  & > :nth-child(4) {
+    @include keyframesToX(toX1, 45deg);
+    @include animate(toX1);
+  }
+  & > :nth-child(2),
+  & > :nth-child(3) {
+    @include keyframesToX(toX2, -45deg);
+    @include animate(toX2);
+  }
+}
+.fromX {
+  & > :nth-child(1),
+  & > :nth-child(4) {
+    @include keyframesFromX(fromX1, 45deg);
+    @include animate(fromX1);
+  }
+  & > :nth-child(2),
+  & > :nth-child(3) {
+    @include keyframesFromX(fromX2, -45deg);
+    @include animate(fromX2);
+  }
+}

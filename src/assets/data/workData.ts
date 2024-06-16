@@ -1,4 +1,4 @@
-import { WorkObject } from "../../model/workObject";
+import { WorkObject } from "../../model/dataInterfaces";
 import angularIcon from "../../assets/carousel/angular.webp";
 import figmaIcon from "../../assets/carousel/figma.jpg";
 import flutterIcon from "../../assets/carousel/flutter.jpg";

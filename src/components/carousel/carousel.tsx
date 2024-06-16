@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./carousel.css";
-import { Skill } from "../../model/workObject";
+import { Skill } from "../../model/dataInterfaces";
 import workData from "../../assets/data/workData";
 
 const carouselSkills: Skill[] = workData.skills;

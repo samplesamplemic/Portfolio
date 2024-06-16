@@ -8,7 +8,7 @@ import dictionaryApp from "../../assets/projects/dictionaryDesign.png";
 import Carousel from "react-multi-carousel";
 import workData from "../../assets/data/workData";
 import projectData from "../../assets/data/projectsData";
-import { ProjectItems, ProjectObject, Skill } from "../../model/workObject";
+import { ProjectItems, ProjectObject, Skill } from "../../model/dataInterfaces";
 import "react-multi-carousel/lib/styles.css";
 import CustomZoomImage from "./CustomZoomImage";
 // import "../carousel/carousel.css";
@@ -92,6 +92,7 @@ function Projects() {
                 href={el.githubSource}
                 target="_blank"
                 className="text-center m-4 text-lg rounded-sm hover:bg-secondary hover:transition-all hover:duration-300"
+                title="Github source"
               >
                 {el.title}
               </a>

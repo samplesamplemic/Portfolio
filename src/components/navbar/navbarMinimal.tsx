@@ -1,20 +1,13 @@
 import { Link } from "react-router-dom";
-import { HomeIcon as Home } from "@heroicons/react/24/solid";
-import { InboxIcon } from "@heroicons/react/24/solid";
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
 import "./navbar.css";
-import iconLinkedin from "../../assets/icons/icon-linkedin.png";
-import iconLinkedinHover from "../../assets/icons/icon-linkedin-hover.png";
-import iconGithub from "../../assets/icons/icno-github.png";
-import iconGithubHover from "../../assets/icons/icon-github-hover.png";
 import { ReactElement } from "react";
-import { PortfolioObject } from "../../model/workObject";
+import { NavbarObject, PortfolioObject } from "../../model/dataInterfaces";
 import { PortfolioData } from "../../assets/data/portfoglioData";
+import { navbarSocialData } from "../../assets/data/navbarData";
 
 function NavbarMinimal(props: { childComponent: ReactElement }) {
   const portfolioData: PortfolioObject = PortfolioData;
-
+  const navbarSocialIcons: NavbarObject[][] = navbarSocialData;
   return (
     <>
       <div className="w-full flex flex-1 justify-between items-center">
@@ -41,34 +34,25 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
         {/* w-[80%]*/}
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
-          <div className="group cursor-pointer">
-            <img
-              src={iconLinkedinHover}
-              alt="LinkedIn"
-              title="Linkedln"
-              className="w-6 hidden group-hover:block"
-            />
-            <img
-              src={iconLinkedin}
-              alt="LinkedIn"
-              title="Linkedln"
-              className="w-6 group-hover:hidden"
-            />
-          </div>
-          <div className="group cursor-pointer">
-            <img
-              src={iconGithubHover}
-              alt="Github"
-              title="Source"
-              className="w-6 hidden group-hover:block"
-            />
-            <img
-              src={iconGithub}
-              alt="Github"
-              title="Source"
-              className="w-6 group-hover:hidden"
-            />
-          </div>
+          {navbarSocialIcons.map((navbarSocialIcon) => {
+            return (
+              <div className="group cursor-pointer">
+                <img
+                  src={navbarSocialIcon[0].icon.toString()}
+                  alt={navbarSocialIcon[0].title}
+                  title={navbarSocialIcon[0].title}
+                  className="w-6 hidden group-hover:block"
+                />
+                <img
+                  src={navbarSocialIcon[1].icon.toString()}
+                  alt={navbarSocialIcon[1].title}
+                  title={navbarSocialIcon[1].title}
+                  className="w-6 group-hover:hidden"
+                />
+              </div>
+            );
+          })}
+
           <div className="w-6 h-6"></div>
         </div>
       </div>

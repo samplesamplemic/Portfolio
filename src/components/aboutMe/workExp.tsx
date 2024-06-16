@@ -1,5 +1,5 @@
 import workData from "../../assets/data/workData";
-import { WorkPosition } from "../../model/workObject";
+import { WorkPosition } from "../../model/dataInterfaces";
 
 function WorkExp() {
   const workPositions: WorkPosition[] = workData.workPositions;

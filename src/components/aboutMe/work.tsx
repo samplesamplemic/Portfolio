@@ -1,6 +1,6 @@
 import workData from "../../assets/data/workData";
 import WorkExp from "./workExp";
-import { AboutMe } from "../../model/workObject";
+import { AboutMe } from "../../model/dataInterfaces";
 
 function Work() {
   const aboutMe: AboutMe = workData.aboutMe;
