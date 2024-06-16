@@ -1,3 +1,6 @@
+export interface WorkItems {
+  workitems: WorkObject[];
+}
 export interface WorkObject {
   workPositions: WorkPosition[];
   aboutMe: AboutMe;
@@ -22,10 +25,9 @@ export interface Skill {
   skillImageUrl: string;
 }
 
-export interface PortfolioObject {
+export interface NavbarItems {
   navbarItems: NavbarObject[];
 }
-
 export interface NavbarObject {
   icon:
     | React.ForwardRefExoticComponent<
@@ -47,4 +49,10 @@ export interface ProjectObject {
   title: string;
   description: string;
   githubSource: string;
+}
+
+export interface PortfolioObject {
+  navbarItems: NavbarItems;
+  // workItems: WorkObject;
+  projectsItems: ProjectItems;
 }

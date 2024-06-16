@@ -47,3 +47,20 @@
     @include animate(fromX2);
   }
 }
+
+.center {
+  animation: center 0.33s linear forwards;
+}
+
+@keyframes center {
+  0% {
+    transform: translateY(10%);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

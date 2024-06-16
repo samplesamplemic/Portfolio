@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
-import "./navbar.css";
+// import "./navbar.css";
+import "./navbar.scss";
 import { ReactElement } from "react";
-import { NavbarObject, PortfolioObject } from "../../model/dataInterfaces";
+import {
+  NavbarItems,
+  NavbarObject,
+  PortfolioObject,
+} from "../../model/dataInterfaces";
 import { PortfolioData } from "../../assets/data/portfoglioData";
-import { navbarSocialData } from "../../assets/data/navbarData";
+import { navbarData, navbarSocialData } from "../../assets/data/navbarData";
 
 function NavbarMinimal(props: { childComponent: ReactElement }) {
-  const portfolioData: PortfolioObject = PortfolioData;
+  const navbarItems: NavbarItems = navbarData;
   const navbarSocialIcons: NavbarObject[][] = navbarSocialData;
   return (
     <>
       <div className="w-full flex flex-1 justify-between items-center">
         <div className="flex flex-col font-medium p-10 gap-16 border-r-2 border-tertiary">
-          {portfolioData.navbarItems.map((navbarItem) => {
+          {navbarItems.navbarItems.map((navbarItem) => {
             return (
               <div>
                 <Link

@@ -10,6 +10,12 @@ import garageApp4 from "../projects/garage-API5.png";
 const projectData: ProjectItems = {
   projectItems: [
     {
+      img: [garageApp, garageApp1, garageApp2, garageApp3, garageApp4],
+      title: "Garage API",
+      description: "",
+      githubSource: "https://github.com/samplesamplemic/Garage-API",
+    },
+    {
       img: [flutterApp],
       title: "Flutter App",
       description: "Youtube ",
@@ -21,12 +27,7 @@ const projectData: ProjectItems = {
       description: "",
       githubSource: "https://github.com/samplesamplemic/Dictionary_2.0",
     },
-    {
-      img: [garageApp, garageApp1, garageApp2, garageApp3, garageApp4],
-      title: "Garage API",
-      description: "",
-      githubSource: "https://github.com/samplesamplemic/Garage-API",
-    },
+
     // {
     //   img: [],
     //   title: "",
