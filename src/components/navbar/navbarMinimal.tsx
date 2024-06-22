@@ -11,9 +11,9 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
     <>
       <div className="w-full flex flex-1 justify-between items-center">
         <div className="flex flex-col font-medium p-10 gap-16 border-r-2 border-tertiary">
-          {navbarItems.navbarItems.map((navbarItem) => {
+          {navbarItems.navbarItems.map((navbarItem, index) => {
             return (
-              <div>
+              <div key={index}>
                 <Link
                   to={navbarItem.link}
                   className="homeLink hover:animate-bounce hover:text-secondary hover:border-b-[3px] border-secondary"
@@ -33,9 +33,9 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
         {/* w-[80%]*/}
         <div className="flex flex-col gap-16 p-10 border-l-2 border-tertiary">
           <div className="w-6 h-6"></div>
-          {navbarSocialIcons.map((navbarSocialIcon) => {
+          {navbarSocialIcons.map((navbarSocialIcon, index) => {
             return (
-              <div className="group cursor-pointer">
+              <div className="group cursor-pointer" key={index}>
                 <img
                   src={navbarSocialIcon[0].icon.toString()}
                   alt={navbarSocialIcon[0].title}

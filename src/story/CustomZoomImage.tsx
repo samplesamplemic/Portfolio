@@ -1,5 +1,5 @@
 import "react-medium-image-zoom/dist/styles.css";
-import { ProjectObject } from "../../model/portfoglio";
+import { ProjectObject } from "../model/portfoglio";
 
 function CustomZoomImage(data) {
   return (

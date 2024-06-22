@@ -22,7 +22,7 @@ function Projects() {
       <div className="flex flex-col items-center flex-wrap justify-between gap-4">
         {projectsData.projectItems.map((el, index) => {
           return (
-            <div className="parent w-[45%] flex flex-col">
+            <div className="parent w-[45%] flex flex-col" key={index}>
               <Carousel responsive={responsive}>
                 {el.img.map((img) => {
                   return (

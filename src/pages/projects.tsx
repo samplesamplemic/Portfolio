@@ -1,6 +1,5 @@
 import MultiPage from "../components/navbar/multiPage";
 import NavbarMinimal from "../components/navbar/navbarMinimal";
-import "../index.css";
 import Projects from "../components/projects/projects";
 
 function ProjectsPage() {
