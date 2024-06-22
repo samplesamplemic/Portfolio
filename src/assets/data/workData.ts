@@ -1,4 +1,3 @@
-import { WorkObject } from "../../model/dataInterfaces";
 import angularIcon from "../../assets/carousel/angular.webp";
 import figmaIcon from "../../assets/carousel/figma.jpg";
 import flutterIcon from "../../assets/carousel/flutter.jpg";
@@ -10,74 +9,77 @@ import springIcon from "../../assets/carousel/springJava.png";
 import tailwindIcon from "../../assets/carousel/tailwindcss.png";
 import sqlIcon from "../../assets/carousel/SQL.jpg";
 import agileIcon from "../../assets/carousel/agile.png";
+import { WorkItems } from "../../model/work";
 
-const workData: WorkObject = {
-  workPositions: [
-    {
-      workPosition: "Capgemini - Analyst Consultant",
-      workTypology: "Apprenticeship",
-      workYear: "2022",
-      workMonth: "Nov - Current",
-      workDescription: "Full-Stack development using agile methodology",
+const workData: WorkItems = {
+  workitems: {
+    workPositions: [
+      {
+        workPosition: "Capgemini - Analyst Consultant",
+        workTypology: "Apprenticeship",
+        workYear: "2022",
+        workMonth: "Nov - Current",
+        workDescription: "Full-Stack development using agile methodology",
+      },
+      {
+        workPosition: "Full-Stack Developer",
+        workTypology: "Develhope Academy",
+        workYear: "2022",
+        workMonth: "Apr - Nov",
+        workDescription:
+          "Web application development using agile methodology. Horizontal tutoring for other students of Full-Stack Web Developer courses.",
+        workLink: "https://www.develhope.co/",
+      },
+      {
+        workPosition: "Information Technology Assistant",
+        workTypology: "WIT Informatica · Stage",
+        workYear: "2021",
+        workMonth: "Nov - Mar",
+        workDescription:
+          "Consultancy to partner companies for software and hardware solutions.",
+      },
+    ],
+    aboutMe: {
+      work: "Jr. Software Developer",
+      goalDescription:
+        "From humanities studies to the IT sector, I have defined a great passion for building digital services and infrastructures. I'm looking for personal realization and professional development.",
     },
-    {
-      workPosition: "Full-Stack Developer",
-      workTypology: "Develhope Academy",
-      workYear: "2022",
-      workMonth: "Apr - Nov",
-      workDescription:
-        "Web application development using agile methodology. Horizontal tutoring for other students of Full-Stack Web Developer courses.",
-      workLink: "https://www.develhope.co/",
-    },
-    {
-      workPosition: "Information Technology Assistant",
-      workTypology: "WIT Informatica · Stage",
-      workYear: "2021",
-      workMonth: "Nov - Mar",
-      workDescription:
-        "Consultancy to partner companies for software and hardware solutions.",
-    },
-  ],
-  aboutMe: {
-    work: "Jr. Software Developer",
-    goalDescription:
-      "From humanities studies to the IT sector, I have defined a great passion for building digital services and infrastructures. I'm looking for personal realization and professional development.",
+    skills: [
+      {
+        skillImageUrl: angularIcon,
+      },
+      {
+        skillImageUrl: agileIcon,
+      },
+      {
+        skillImageUrl: sqlIcon,
+      },
+      {
+        skillImageUrl: figmaIcon,
+      },
+      {
+        skillImageUrl: flutterIcon,
+      },
+      {
+        skillImageUrl: htmlCssJsIcon,
+      },
+      {
+        skillImageUrl: kotlinIcon,
+      },
+      {
+        skillImageUrl: nodeIcon,
+      },
+      {
+        skillImageUrl: reactIcon,
+      },
+      {
+        skillImageUrl: springIcon,
+      },
+      {
+        skillImageUrl: tailwindIcon,
+      },
+    ],
   },
-  skills: [
-    {
-      skillImageUrl: angularIcon,
-    },
-    {
-      skillImageUrl: agileIcon,
-    },
-    {
-      skillImageUrl: sqlIcon,
-    },
-    {
-      skillImageUrl: figmaIcon,
-    },
-    {
-      skillImageUrl: flutterIcon,
-    },
-    {
-      skillImageUrl: htmlCssJsIcon,
-    },
-    {
-      skillImageUrl: kotlinIcon,
-    },
-    {
-      skillImageUrl: nodeIcon,
-    },
-    {
-      skillImageUrl: reactIcon,
-    },
-    {
-      skillImageUrl: springIcon,
-    },
-    {
-      skillImageUrl: tailwindIcon,
-    },
-  ],
 };
 
 export default workData;

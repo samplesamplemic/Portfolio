@@ -1,9 +1,9 @@
 import workData from "../../assets/data/workData";
-import WorkExp from "./workExp";
-import { AboutMe } from "../../model/dataInterfaces";
+import WorkExp from "./workPositions";
+import { AboutMe } from "../../model/work";
 
 function Work() {
-  const aboutMe: AboutMe = workData.aboutMe;
+  const aboutMe: AboutMe = workData.workitems.aboutMe;
   return (
     <>
       <div className="w-[70%] m-auto flex flex-col gap-8 items-center text-center">

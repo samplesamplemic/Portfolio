@@ -1,10 +1,10 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./carousel.css";
-import { Skill } from "../../model/dataInterfaces";
+import "./carousel.scss";
+import { Skill } from "../../model/work";
 import workData from "../../assets/data/workData";
 
-const carouselSkills: Skill[] = workData.skills;
+const carouselSkills: Skill[] = workData.workitems.skills;
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1200 },
@@ -33,13 +33,13 @@ const Slider = () => {
         keyBoardControl={true}
         customTransition="all 10s linear" //all/transform 15s work right
         transitionDuration={12000}
-        // rewindWithAnimation={true}
         swipeable={true}
         draggable={true}
-        // centerMode={true}
         infinite={true}
         partialVisible={false}
         arrows={false}
+        // rewindWithAnimation={true}
+        // centerMode={true}
         // showDots={true}
         // dotListClass="custom-dot-list-style"
       >

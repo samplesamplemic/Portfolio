@@ -1,6 +1,5 @@
 import { useState, useLayoutEffect } from "react";
 import "react-medium-image-zoom/dist/styles.css";
-import { ProjectObject } from "../../model/dataInterfaces";
 
 export const CustomZoomContent = ({
   buttonUnzoom, // default unzoom button

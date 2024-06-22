@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../../index.css";
-// import "./navbar.css";
 import "./navbar.scss";
 
 function MultiPage() {

@@ -4,9 +4,8 @@ import "react-medium-image-zoom/dist/styles.css";
 import { CustomZoomContent } from "./projectZoomCustom";
 import Carousel from "react-multi-carousel";
 import projectData from "../../assets/data/projectsData";
-import { ProjectItems } from "../../model/dataInterfaces";
+import { ProjectItems } from "../../model/project";
 import "react-multi-carousel/lib/styles.css";
-import { useEffect, useState } from "react";
 
 function Projects() {
   const responsive = {

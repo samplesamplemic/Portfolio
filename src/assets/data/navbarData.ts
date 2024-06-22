@@ -1,8 +1,4 @@
-import {
-  NavbarItems,
-  NavbarObject,
-  PortfolioObject,
-} from "../../model/dataInterfaces";
+import { NavbarItems, NavbarObject } from "../../model/navbar";
 import { HomeIcon } from "@heroicons/react/24/solid";
 import { InboxIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";

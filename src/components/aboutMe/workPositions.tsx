@@ -1,8 +1,8 @@
 import workData from "../../assets/data/workData";
-import { WorkPosition } from "../../model/dataInterfaces";
+import { WorkPosition } from "../../model/work";
 
 function WorkExp() {
-  const workPositions: WorkPosition[] = workData.workPositions;
+  const workPositions: WorkPosition[] = workData.workitems.workPositions;
   return (
     <>
       {workPositions.map((item, index) => (

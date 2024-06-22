@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
-// import "./navbar.css";
 import "./navbar.scss";
 import { ReactElement } from "react";
-import {
-  NavbarItems,
-  NavbarObject,
-  PortfolioObject,
-} from "../../model/dataInterfaces";
-import { PortfolioData } from "../../assets/data/portfoglioData";
+import { NavbarItems, NavbarObject } from "../../model/navbar";
 import { navbarData, navbarSocialData } from "../../assets/data/navbarData";
 
 function NavbarMinimal(props: { childComponent: ReactElement }) {

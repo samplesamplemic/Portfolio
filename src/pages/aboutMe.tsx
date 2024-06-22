@@ -1,4 +1,4 @@
-import Work from "../components/aboutMe/work";
+import Work from "../components/aboutMe/aboutMe";
 import MultiPage from "../components/navbar/multiPage";
 import NavbarMinimal from "../components/navbar/navbarMinimal";
 import NavbarSmartphone from "../components/navbar/navbarSmartphone";
