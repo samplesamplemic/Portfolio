@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../index.css";
-import "./navbar.scss";
+import "../../style/navbar.scss";
 
 function MultiPage() {
   const [toX, setAnimation] = useState(true);

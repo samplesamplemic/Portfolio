@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./navbar.scss";
+import "../../style/navbar.scss";
 import { ReactElement } from "react";
 import { NavbarItems, NavbarObject } from "../../model/navbar";
 import { navbarData, navbarSocialData } from "../../assets/data/navbarData";

@@ -12,20 +12,23 @@ const projectData: ProjectItems = {
     {
       img: [garageApp, garageApp1, garageApp2, garageApp3, garageApp4],
       title: "Garage API",
-      description: "",
+      description: "Spring Rest API",
       githubSource: "https://github.com/samplesamplemic/Garage-API",
+      state: "",
     },
     {
       img: [flutterApp],
       title: "Flutter App",
-      description: "Youtube ",
+      description: "Basic Video Platform",
       githubSource: "https://github.com/samplesamplemic/Yotube_simil",
+      state: "in progress",
     },
     {
       img: [dictionaryApp],
       title: "Kotlin App",
-      description: "",
+      description: "Dictionary",
       githubSource: "https://github.com/samplesamplemic/Dictionary_2.0",
+      state: "in progress",
     },
 
     // {

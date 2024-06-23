@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./carousel.scss";
+import "../../style/carousel.scss";
 import { Skill } from "../../model/work";
 import workData from "../../assets/data/workData";
 

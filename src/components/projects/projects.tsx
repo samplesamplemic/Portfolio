@@ -1,4 +1,4 @@
-import "./projects.scss";
+import "../../style/projects.scss";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { CustomZoomContent } from "./projectZoomCustom";
@@ -49,6 +49,10 @@ function Projects() {
                 >
                   {el.title}
                 </a>
+              </div>
+              <div>
+                {`${el.description} - `}{" "}
+                <span className="text-tertiary">{`${el.state}`}</span>
               </div>
               <hr className="w-10 h-1 self-center bg-white border-0 rounded-sm bg-opacity-40" />
             </div>
