@@ -6,6 +6,7 @@ import Carousel from "react-multi-carousel";
 import projectData from "../../assets/data/projectsData";
 import { ProjectItems } from "../../model/project";
 import "react-multi-carousel/lib/styles.css";
+import { projectsClassname } from "../../style/tailwindClassname/projects";
 
 function Projects() {
   const responsive = {
@@ -19,16 +20,26 @@ function Projects() {
 
   return (
     <>
-      <div className="flex flex-row items-center text-center flex-wrap justify-between gap-4">
+      <div className={projectsClassname.main}>
         {projectsData.projectItems.map((el, index) => {
           return (
-            <div className="parent w-[45%] flex flex-col gap-2" key={index}>
+            <div
+              className={projectsClassname.singleProj}
+              key={index}
+            >
               <Carousel responsive={responsive}>
                 {el.img.map((img) => {
                   return (
-                    <div className="sliderProj" key={index}>
+                    <div
+                      className="sliderProj"
+                      key={index}
+                    >
                       <Zoom ZoomContent={CustomZoomContent}>
-                        <img src={img} alt={el.title} />
+                        <img
+                          className="test w-40 h-40 object-cover"
+                          src={img}
+                          alt={el.title}
+                        />
                         {/* <CustomZoomImage
                           img={el}
                           title={el.title}
@@ -40,11 +51,11 @@ function Projects() {
                   );
                 })}
               </Carousel>
-              <div>
+              <div className="mt-2">
                 <a
                   href={el.githubSource}
                   target="_blank"
-                  className="text-center text-nowrap px-1 m-4 text-lg rounded-sm hover:bg-secondary hover:transition-all hover:duration-300"
+                  className="text-center text-nowrap px-3 py-1 m-4 text-secondary font-semibold text-lg rounded-sm hover:text-white hover:bg-secondary hover:transition-all hover:duration-300"
                   title="Github source"
                 >
                   {el.title}
@@ -52,9 +63,9 @@ function Projects() {
               </div>
               <div>
                 {`${el.description} - `}{" "}
-                <span className="text-tertiary">{`${el.state}`}</span>
+                <span className={projectsClassname.state}>{`${el.state}`}</span>
               </div>
-              <hr className="w-10 h-1 self-center bg-white border-0 rounded-sm bg-opacity-40" />
+              <hr className={projectsClassname.divider} />
             </div>
           );
         })}
