@@ -1,31 +1,32 @@
 import workData from "../../assets/data/workData";
-import WorkExp from "./workPositions";
+import WorkPositions from "./workPositions";
 import { AboutMe } from "../../model/work";
+import { aboutMeClassname } from "../../style/tailwindClassname/aboutMe";
 
 function Work() {
   const aboutMe: AboutMe = workData.workitems.aboutMe;
   return (
     <>
-      <div className="w-[70%] m-auto flex flex-col gap-8 items-center text-center">
-        <div className=" flex flex-col gap-2 md:w-[80%]">
-          <div className="text-xl font-semibold flex flex-col items-center">
+      <div className={aboutMeClassname.main}>
+        <div className={aboutMeClassname.aboutMe}>
+          <div className={aboutMeClassname.title}>
             About me
-            <hr className="w-14 h-[.2rem] bg-white border-0 rounded-sm bg-opacity-40" />
+            <hr className={aboutMeClassname.divider} />
           </div>
-          <div className="text-">
-            <span className="text-lg font-medium text-secondary">
+          <div>
+            <span className={aboutMeClassname.description}>
               {aboutMe.work}
             </span>
             <br />
             {aboutMe.goalDescription}
           </div>
         </div>
-        <div className="flex flex-col gap-2 md:w-[80%] items-center">
-          <div className="text-xl font-semibold flex flex-col">
+        <div className={aboutMeClassname.workSection}>
+          <div className={aboutMeClassname.work}>
             Work
-            <hr className="w-14 h-[.2rem] bg-white border-0 rounded-sm bg-opacity-40" />
+            <hr className={aboutMeClassname.divider} />
           </div>
-          <WorkExp />
+          <WorkPositions />
         </div>
       </div>
     </>

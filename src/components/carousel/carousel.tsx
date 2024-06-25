@@ -3,6 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import "../../style/carousel.scss";
 import { Skill } from "../../model/work";
 import workData from "../../assets/data/workData";
+import { carouselClassname } from "../../style/tailwindClassname/carousel";
 
 const carouselSkills: Skill[] = workData.workitems.skills;
 const responsive = {
@@ -25,7 +26,7 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <div className="parent ">
+    <div className="parent">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -45,13 +46,19 @@ const Slider = () => {
       >
         {carouselSkills.map((skill, index) => {
           return (
-            <div className="slider" key={index}>
-              <img src={skill.skillImageUrl} alt="movie" />
+            <div
+              className="slider"
+              key={index}
+            >
+              <img
+                src={skill.skillImageUrl}
+                alt="movie"
+              />
             </div>
           );
         })}
       </Carousel>
-      <div className="text-tertiary font-semibold float-end mt-1">
+      <div className={carouselClassname.info}>
         Tech stack of my projects on Github
       </div>
     </div>

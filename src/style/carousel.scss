@@ -10,9 +10,10 @@
   border-radius: 10px;
 }
 
-.react-multi-carousel-list {
-  /* padding-bottom: 2rem; */
-}
+// .react-multi-carousel-list {
+//    padding-bottom: 2rem;
+// }
+
 .react-multi-carousel-track {
   /* display: flex; */
   align-items: center;
@@ -22,6 +23,7 @@
   border: none;
   background: rgb(255, 68, 68);
 }
-.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+.react-multi-carousel-dot.react-multi-carousel-dot--active
+  button {
   background: rgb(255, 68, 68) !important;
 }

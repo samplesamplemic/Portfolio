@@ -36,7 +36,7 @@ function Projects() {
                     >
                       <Zoom ZoomContent={CustomZoomContent}>
                         <img
-                          className="test w-40 h-40 object-cover"
+                          className={projectsClassname.img}
                           src={img}
                           alt={el.title}
                         />
@@ -55,7 +55,7 @@ function Projects() {
                 <a
                   href={el.githubSource}
                   target="_blank"
-                  className="text-center text-nowrap px-3 py-1 m-4 text-secondary font-semibold text-lg rounded-sm hover:text-white hover:bg-secondary hover:transition-all hover:duration-300"
+                  className={projectsClassname.title}
                   title="Github source"
                 >
                   {el.title}
@@ -63,7 +63,9 @@ function Projects() {
               </div>
               <div>
                 {`${el.description} - `}{" "}
-                <span className={projectsClassname.state}>{`${el.state}`}</span>
+                <span
+                  className={projectsClassname.state}
+                >{`${el.state}`}</span>
               </div>
               <hr className={projectsClassname.divider} />
             </div>

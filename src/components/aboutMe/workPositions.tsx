@@ -1,33 +1,44 @@
 import workData from "../../assets/data/workData";
 import { WorkPosition } from "../../model/work";
+import { workPositionClassname } from "../../style/tailwindClassname/workPositions";
 
-function WorkExp() {
-  const workPositions: WorkPosition[] = workData.workitems.workPositions;
+function WorkPositions() {
+  const workPositions: WorkPosition[] =
+    workData.workitems.workPositions;
   return (
     <>
       {workPositions.map((item, index) => (
-        <div key={index} className="flex flex-col items-center gap-2">
-          <div className="flex flex-col items-center">
-            <div className="text-lg font-medium text-secondary">
+        <div
+          key={index}
+          className={workPositionClassname.main}
+        >
+          <div className={workPositionClassname.workPostion}>
+            <div className={workPositionClassname.title}>
               {item.workPosition}
             </div>
             <div className="italic">
-              <a target="_blank" href={item.workLink} className="">
+              <a
+                target="_blank"
+                href={item.workLink}
+                className=""
+              >
                 {item.workTypology}
               </a>
             </div>
-            <div className="flex gap-4 mb-1">
-              <span className="font-medium">{item.workYear} </span>
+            <div className={workPositionClassname.workYear}>
+              <span className="font-medium">
+                {item.workYear}{" "}
+              </span>
               <span>{item.workMonth}</span>
             </div>
             {item.workDescription}
           </div>
 
-          <hr className="w-1 h-1 bg-white border-0 rounded-sm bg-opacity-40" />
+          <hr className={workPositionClassname.divider} />
         </div>
       ))}
     </>
   );
 }
 
-export default WorkExp;
+export default WorkPositions;

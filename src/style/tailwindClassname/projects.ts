@@ -8,7 +8,14 @@ export const projectsClassname = {
     "justify-between",
     "gap-12",
   ].join(" "),
-  singleProj: ["parent", "w-[45%]", "flex", "flex-col", "gap-2"].join(" "),
+  singleProj: [
+    "parent",
+    "w-[45%]",
+    "flex",
+    "flex-col",
+    "gap-2",
+  ].join(" "),
+  img: ["w-40", "h-40", "object-cover"].join(" "),
   title: [
     "text-center",
     "text-nowrap",

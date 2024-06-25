@@ -36,24 +36,24 @@ export const navbarSocialData: NavbarObject[][] = [
   [
     {
       icon: iconLinkedinHover,
-      link: "/",
+      link: "https://www.linkedin.com/in/michele-la-torre-a8990b235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgJPSISRmTV6NwCJoTDWNNw%3D%3D",
       title: "LinkedIn",
     },
     {
       icon: iconLinkedin,
-      link: "/",
+      link: "https://www.linkedin.com/in/michele-la-torre-a8990b235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgJPSISRmTV6NwCJoTDWNNw%3D%3D",
       title: "LinkedIn",
     },
   ],
   [
     {
       icon: iconGithubHover,
-      link: "/",
+      link: "https://github.com/samplesamplemic",
       title: "Github",
     },
     {
       icon: iconGithub,
-      link: "/",
+      link: "https://github.com/samplesamplemic",
       title: "Github",
     },
   ],
