@@ -24,7 +24,7 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
                 >
                   {
                     <navbarItem.icon
-                      className={navbarClassname.iconTitle}
+                      className={navbarClassname.iconHover}
                       title={navbarItem.title}
                     />
                   }

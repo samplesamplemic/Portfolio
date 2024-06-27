@@ -1,19 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
-import Home from "./pages/home";
-import AboutMe from "./pages/aboutMe";
-import Projects from "./pages/projects";
+import Desktop from "./desktop";
+import Smartphone from "./smartphone";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/aboutMe" element={<AboutMe />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <Desktop />
+      <Smartphone />
     </>
   );
 }

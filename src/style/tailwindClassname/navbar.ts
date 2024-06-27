@@ -22,7 +22,7 @@ export const navbarClassname = {
     "hover:border-b-[3px]",
     "border-secondary",
   ].join(" "),
-  iconTitle: ["w-6", " hover:text-secondary"].join(" "),
+  iconHover: ["w-6", " hover:text-secondary"].join(" "),
   socialIcons: [
     "flex",
     "flex-col",

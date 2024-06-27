@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../../index.css";
 import "./navbar.css";
 import githubLogo from "../../assets/github-mark-white.png";
 
@@ -18,18 +17,31 @@ function Navbar() {
           } hidden md:flex gap-6 text-lg items-center`}
         >
           <div className="home flex hover:bg-[#196c8080] rounded-sm">
-            <a href="" className="link home p-1">
+            <a
+              href=""
+              className="link home p-1"
+            >
               Home
             </a>
           </div>
           <div className="portfolio flex hover:bg-[#196c8080] rounded-sm">
-            <a href="" className="link portfolio p-1">
+            <a
+              href=""
+              className="link portfolio p-1"
+            >
               Portfolio
             </a>
           </div>
           <div className="sourceCode flex items-center p-1 hover:bg-[#196c8080] rounded-sm">
-            <img src={githubLogo} alt="githubLogo" className="w-5" />
-            <a href="" className="link sourceCode  pl-1">
+            <img
+              src={githubLogo}
+              alt="githubLogo"
+              className="w-5"
+            />
+            <a
+              href=""
+              className="link sourceCode  pl-1"
+            >
               Source
             </a>
           </div>

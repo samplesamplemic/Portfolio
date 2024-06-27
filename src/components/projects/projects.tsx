@@ -21,6 +21,14 @@ function Projects() {
   return (
     <>
       <div className={projectsClassname.main}>
+        <div className="md:hidden flex-[100%] flex flex-col gap-2">
+          <h1 className="text-2xl font-extrabold pt-4">
+            Projects
+          </h1>
+          <hr
+            className={`${projectsClassname.divider} w-[80%]`}
+          />
+        </div>
         {projectsData.projectItems.map((el, index) => {
           return (
             <div

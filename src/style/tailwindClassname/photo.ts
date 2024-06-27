@@ -8,9 +8,9 @@ export const photoClassname = {
   ].join(" "),
   imgDiv: [
     "flex-none",
-    "md:self-center",
-    "hidden",
-    "md:flex",
+    "self-center",
+    // "hidden",
+    "flex",
   ].join(" "),
   img: [
     "w-20",

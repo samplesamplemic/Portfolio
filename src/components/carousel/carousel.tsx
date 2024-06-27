@@ -18,15 +18,15 @@ const responsive = {
     slidesToSlide: 3,
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
+    breakpoint: { max: 767, min: 0 },
     items: 2,
-    slidesToSlide: 3,
+    slidesToSlide: 2,
   },
 };
 
 const Slider = () => {
   return (
-    <div className="parent">
+    <div className="parent p-2">
       <Carousel
         responsive={responsive}
         autoPlay={true}

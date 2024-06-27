@@ -5,7 +5,7 @@ import Projects from "../components/projects/projects";
 function ProjectsPage() {
   return (
     <>
-      <div className="flex flex-col h-full items-center">
+      <div className="flex flex-col md:h-full items-center">
         <MultiPage />
         <NavbarMinimal childComponent={<Projects />} />
       </div>
