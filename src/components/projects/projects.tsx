@@ -7,6 +7,9 @@ import projectData from "../../assets/data/projectsData";
 import { ProjectItems } from "../../model/project";
 import "react-multi-carousel/lib/styles.css";
 import { projectsClassname } from "../../style/tailwindClassname/projects";
+import githubIcon from "../../assets/icons/icon-github.png";
+import githubIconHover from "../../assets/icons/icon-github-hover.png";
+import { navbarClassname } from "../../style/tailwindClassname/navbar";
 
 function Projects() {
   const responsive = {
@@ -59,7 +62,7 @@ function Projects() {
                   );
                 })}
               </Carousel>
-              <div className="mt-2">
+              <div className="mt-2 flex gap-2 items-center justify-center">
                 <a
                   href={el.githubSource}
                   target="_blank"
@@ -68,9 +71,25 @@ function Projects() {
                 >
                   {el.title}
                 </a>
+                <div className="group cursor-pointer bg-transparent ">
+                  <a
+                    href={el.githubSource}
+                    target="_blank"
+                  >
+                    <img
+                      src={githubIconHover}
+                      className={`${navbarClassname.socialIconHover} `}
+                    />
+                  </a>
+
+                  <img
+                    src={githubIcon}
+                    className={navbarClassname.socialIcon}
+                  />
+                </div>
               </div>
-              <div>
-                {`${el.description} - `}{" "}
+              <div className="font-light">
+                {`${el.description}`} <br />
                 <span
                   className={projectsClassname.state}
                 >{`${el.state}`}</span>

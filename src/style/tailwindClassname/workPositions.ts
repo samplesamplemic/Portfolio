@@ -1,6 +1,15 @@
 export const workPositionClassname = {
-  main: ["flex", "flex-col", "items-center", "gap-2"].join(" "),
-  workPostion: ["flex", "flex-col", "items-center"].join(" "),
+  main: [
+    "flex",
+    "flex-col",
+    // "items-center",
+    "gap-2",
+  ].join(" "),
+  workPostion: [
+    "flex",
+    "flex-col",
+    // "items-center"
+  ].join(" "),
   title: ["text-lg", "font-medium", "text-secondary"].join(" "),
   workYear: ["flex", "gap-4", "mb-1"].join(" "),
   divider: [
@@ -10,5 +19,6 @@ export const workPositionClassname = {
     "border-0",
     "rounded-sm",
     "bg-opacity-40",
+    "hidden",
   ].join(" "),
 };

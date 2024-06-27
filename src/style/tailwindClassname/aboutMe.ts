@@ -5,16 +5,17 @@ export const aboutMeClassname = {
     "flex",
     "flex-col",
     "gap-8",
-    "items-center",
-    "text-center",
+    "md:flex-row",
+    // "items-center",
+    // "text-center",
   ].join(" "),
-  aboutMe: ["flex", "flex-col", "gap-2", "md:w-[80%]"].join(" "),
+  aboutMe: ["flex", "flex-col", "gap-2", "md:w-[50%]"].join(" "),
   title: [
     "text-xl",
     "font-semibold",
     "flex",
     "flex-col",
-    "items-center",
+    // "items-center",
   ].join(" "),
   divider: [
     "w-14",
@@ -31,8 +32,8 @@ export const aboutMeClassname = {
     "flex",
     "flex-col",
     "gap-2",
-    "md:w-[80%]",
-    "items-center",
+    "md:w-[50%]",
+    // "items-center",
   ].join(" "),
   work: ["text-xl", "font-semibold", "flex", "flex-col"].join(
     " "

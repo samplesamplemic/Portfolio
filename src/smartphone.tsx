@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/smartphone/home";
-import AboutMe from "./pages/aboutMe";
+import AboutMe from "./pages/smartphone/aboutMe";
 import ProjectsPage from "./pages/smartphone/projects";
 
 function Smartphone() {

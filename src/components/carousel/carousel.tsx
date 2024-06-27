@@ -39,7 +39,7 @@ const Slider = () => {
         infinite={true}
         partialVisible={false}
         arrows={false}
-        // rewindWithAnimation={true}
+        rewindWithAnimation={true}
         // centerMode={true}
         // showDots={true}
         // dotListClass="custom-dot-list-style"
