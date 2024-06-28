@@ -20,6 +20,9 @@ export interface WorkPosition {
 export interface AboutMe {
   work: string;
   goalDescription: string;
+  name: string;
+  profession: string;
+  photo: string;
 }
 
 export interface Skill {

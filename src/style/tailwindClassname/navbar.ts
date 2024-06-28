@@ -22,6 +22,8 @@ export const navbarClassname = {
     "hover:border-b-[3px]",
     "border-secondary",
   ].join(" "),
+  iconDimension: ["w-6 h-6"].join(" "),
+  groupHoverIcon: ["group cursor-pointer"].join(" "),
   iconHover: ["w-6", " hover:text-secondary"].join(" "),
   socialIcons: [
     "flex",

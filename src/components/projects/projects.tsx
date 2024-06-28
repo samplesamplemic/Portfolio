@@ -62,7 +62,7 @@ function Projects() {
                   );
                 })}
               </Carousel>
-              <div className="mt-2 flex gap-2 items-center justify-center">
+              <div className={projectsClassname.projectDiv}>
                 <a
                   href={el.githubSource}
                   target="_blank"

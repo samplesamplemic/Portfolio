@@ -38,11 +38,11 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
         </div>{" "}
         {/* w-[80%]*/}
         <div className={navbarClassname.socialIcons}>
-          <div className="w-6 h-6"></div>
+          <div className={navbarClassname.iconDimension}></div>
           {navbarSocialIcons.map((navbarSocialIcon, index) => {
             return (
               <div
-                className="group cursor-pointer"
+                className={navbarClassname.groupHoverIcon}
                 key={index}
               >
                 <a
@@ -67,7 +67,7 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
             );
           })}
 
-          <div className="w-6 h-6"></div>
+          <div className={navbarClassname.iconDimension}></div>
         </div>
       </div>
     </>

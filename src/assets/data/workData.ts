@@ -9,6 +9,7 @@ import springIcon from "../../assets/carousel/springJava.png";
 import tailwindIcon from "../../assets/carousel/tailwindcss.png";
 import sqlIcon from "../../assets/carousel/SQL.jpg";
 import agileIcon from "../../assets/carousel/agile.png";
+import photo from "../icons/logo_dragon_youtube.png";
 import { WorkItems } from "../../model/work";
 
 const workData: WorkItems = {
@@ -19,7 +20,8 @@ const workData: WorkItems = {
         workTypology: "Apprenticeship",
         workYear: "2022",
         workMonth: "Nov - Current",
-        workDescription: "Full-Stack development using agile methodology",
+        workDescription:
+          "Full-Stack development using agile methodology",
       },
       {
         workPosition: "Full-Stack Developer",
@@ -43,6 +45,9 @@ const workData: WorkItems = {
       work: "Jr. Software Developer",
       goalDescription:
         "From humanities studies to the IT sector, I have defined a great passion for building digital services and infrastructures. I'm looking for personal realization and professional development.",
+      name: "Michele La Torre",
+      profession: "Full-Stack Developer",
+      photo: photo,
     },
     skills: [
       {

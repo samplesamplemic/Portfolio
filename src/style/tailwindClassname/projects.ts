@@ -19,6 +19,13 @@ export const projectsClassname = {
     "gap-2",
   ].join(" "),
   img: ["w-40", "h-40", "object-cover"].join(" "),
+  projectDiv: [
+    "mt-2",
+    "flex",
+    "gap-2",
+    "items-center",
+    "justify-center",
+  ].join(" "),
   title: [
     "text-center",
     "text-nowrap",
