@@ -5,7 +5,7 @@ import "../../style/navbar.scss";
 function ProjectsPage() {
   return (
     <>
-      <div className="flex flex-col  bg-gradient-to-t from-primaryRadialBG from-0% to-secondaryRadialBG to-100% justify-center">
+      <div className="flex flex-col bg-gradient-to-t from-primaryRadialBG from-0% to-secondaryRadialBG to-100% justify-center">
         <div className="center">
           <Projects />
         </div>

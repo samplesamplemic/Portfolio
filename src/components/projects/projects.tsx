@@ -7,9 +7,9 @@ import projectData from "../../assets/data/projectsData";
 import { ProjectItems } from "../../model/project";
 import "react-multi-carousel/lib/styles.css";
 import { projectsClassname } from "../../style/tailwindClassname/projects";
-import githubIcon from "../../assets/icons/icon-github.png";
-import githubIconHover from "../../assets/icons/icon-github-hover.png";
-import { navbarClassname } from "../../style/tailwindClassname/navbar";
+// import githubIcon from "../../assets/icons/icon-github.png";
+// import githubIconHover from "../../assets/icons/icon-github-hover.png";
+// import { navbarClassname } from "../../style/tailwindClassname/navbar";
 
 function Projects() {
   const responsive = {
@@ -42,7 +42,7 @@ function Projects() {
                 {el.img.map((img) => {
                   return (
                     <div
-                      className="sliderProj"
+                      className="sliderProj m-2 rounded-md shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]"
                       key={index}
                     >
                       <Zoom ZoomContent={CustomZoomContent}>
@@ -71,22 +71,22 @@ function Projects() {
                 >
                   {el.title}
                 </a>
-                <div className="group cursor-pointer bg-transparent ">
+                {/* <div className="group cursor-pointer border hover:border-secondary rounded-md">
                   <a
                     href={el.githubSource}
                     target="_blank"
                   >
                     <img
                       src={githubIconHover}
-                      className={`${navbarClassname.socialIconHover} `}
+                      className={`${navbarClassname.socialIconHover} m-1`}
                     />
                   </a>
 
                   <img
                     src={githubIcon}
-                    className={navbarClassname.socialIcon}
+                    className={`${navbarClassname.socialIcon} m-1`}
                   />
-                </div>
+                </div> */}
               </div>
               <div className="font-light">
                 {`${el.description}`} <br />

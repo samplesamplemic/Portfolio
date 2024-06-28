@@ -17,7 +17,8 @@ export const photoClassname = {
     "md:w-24",
     "rounded-full",
     "border-[1.5px]",
-    "shadow-lg",
+    // "shadow-lg",
+    "shadow-[rgba(0,0,15,0.5)_1px_1px_10px_1px]",
   ].join(" "),
   secondary: [
     "flex",

@@ -1,6 +1,6 @@
 export const aboutMeClassname = {
   main: [
-    "w-[70%]",
+    "w-[80%]",
     "m-auto",
     "flex",
     "flex-col",
