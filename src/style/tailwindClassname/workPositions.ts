@@ -10,7 +10,9 @@ export const workPositionClassname = {
     "flex-col",
     // "items-center"
   ].join(" "),
-  title: ["text-lg", "font-medium", "text-secondary"].join(" "),
+  title: ["text-lg", "font-semibold", "text-secondary"].join(
+    " "
+  ),
   workYear: ["flex", "gap-4", "mb-1"].join(" "),
   divider: [
     "w-1",

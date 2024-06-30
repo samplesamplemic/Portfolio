@@ -1,15 +1,20 @@
 export const aboutMeClassname = {
   main: [
-    "w-[80%]",
+    // "w-[80%]",
     "m-auto",
     "flex",
     "flex-col",
     "gap-8",
-    "md:flex-row",
+    // "md:flex-row",
     // "items-center",
     // "text-center",
   ].join(" "),
-  aboutMe: ["flex", "flex-col", "gap-2", "md:w-[50%]"].join(" "),
+  aboutMe: [
+    "flex",
+    "flex-col",
+    "gap-2",
+    //  "md:w-[50%]"
+  ].join(" "),
   title: [
     "text-xl",
     "font-semibold",
@@ -32,7 +37,7 @@ export const aboutMeClassname = {
     "flex",
     "flex-col",
     "gap-2",
-    "md:w-[50%]",
+    // "md:w-[50%]",
     // "items-center",
   ].join(" "),
   work: ["text-xl", "font-semibold", "flex", "flex-col"].join(

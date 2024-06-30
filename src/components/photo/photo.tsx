@@ -1,4 +1,5 @@
 import workData from "../../assets/data/workData";
+import photo from "../../assets/icons/logo_dragon_youtube.png";
 import { AboutMe } from "../../model/work";
 import { photoClassname } from "../../style/tailwindClassname/photo";
 import Slider from "../carousel/carousel";
@@ -9,14 +10,7 @@ function Photo() {
   return (
     <>
       <div className={photoClassname.main}>
-        <div className={photoClassname.imgDiv}>
-          <img
-            className={photoClassname.img}
-            src={aboutMe.photo}
-            alt="me"
-          />
-        </div>
-        <div className="self-center">
+        <div className="">
           <div className={photoClassname.secondary}>
             <span className={photoClassname.name}>
               {aboutMe.name}
@@ -28,8 +22,14 @@ function Photo() {
             </span>
           </div>
         </div>
+        <div className={photoClassname.imgDiv}>
+          <img
+            className={photoClassname.img}
+            src={aboutMe.photo}
+            alt="me"
+          />
+        </div>
       </div>
-      <Slider />
     </>
   );
 }

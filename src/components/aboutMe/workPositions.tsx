@@ -16,22 +16,31 @@ function WorkPositions() {
             <div className={workPositionClassname.title}>
               {item.workPosition}
             </div>
-            <div className="italic">
-              <a
-                target="_blank"
-                href={item.workLink}
-                className=""
-              >
-                {item.workTypology}
-              </a>
+            <div className="mb-1 flex gap-4 ">
+              <div className="font-medium text-nowrap flex flex-col">
+                <span>{item.workMonth}</span>
+                <span>{item.workYear} </span>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  href={item.workLink}
+                  className="text-nowrap text-tertiary font-semibold"
+                >
+                  {item.workTypology}
+                  {/* {" | "} */}
+                </a>
+                <br />
+                {item.workDescription}
+              </div>
             </div>
-            <div className={workPositionClassname.workYear}>
+            {/* <div className={workPositionClassname.workYear}>
               <span className="font-medium">
                 {item.workYear}{" "}
               </span>
               <span>{item.workMonth}</span>
-            </div>
-            {item.workDescription}
+            </div> */}
+            {/* {item.workDescription} */}
           </div>
 
           <hr className={workPositionClassname.divider} />

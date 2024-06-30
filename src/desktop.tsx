@@ -6,7 +6,7 @@ import Projects from "./pages/projects";
 function Desktop() {
   return (
     <>
-      <div className="h-full hidden md:block">
+      <div className="hidden md:block">
         <BrowserRouter>
           <Routes>
             <Route

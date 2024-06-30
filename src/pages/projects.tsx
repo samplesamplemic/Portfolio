@@ -1,5 +1,5 @@
 import MultiPage from "../components/navbar/multiPage";
-import NavbarMinimal from "../components/navbar/navbarMinimal";
+import Navbar from "../components/navbar/navbar";
 import Projects from "../components/projects/projects";
 
 function ProjectsPage() {
@@ -7,7 +7,7 @@ function ProjectsPage() {
     <>
       <div className="flex flex-col md:h-full items-center">
         <MultiPage />
-        <NavbarMinimal childComponent={<Projects />} />
+        <Navbar childComponent={<Projects />} />
       </div>
     </>
   );

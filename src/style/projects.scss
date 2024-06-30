@@ -17,13 +17,13 @@
 
 .sliderProj img {
   // width: 100%;
-  max-width: 10rem;
+  max-width: 12.5rem;
   border-radius: 10px;
 }
 
-// .react-multi-carousel-list {
-//   padding-bottom: 2rem;
-// }
+.react-multi-carousel-list {
+  // padding-block: 2rem;
+}
 
 .react-multi-carousel-item {
   display: flex;
@@ -36,10 +36,11 @@
 
 .custom-dot-list-style button {
   border: none;
-  background: rgb(255, 68, 68);
+  background: rgb(114, 101, 58);
 }
-.react-multi-carousel-dot.react-multi-carousel-dot--active button {
-  background: rgb(255, 68, 68) !important;
+.react-multi-carousel-dot.react-multi-carousel-dot--active
+  button {
+  background: rgb(114, 101, 58) !important;
 }
 
 .test:hover {

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "../../style/navbar.scss";
-import { ReactElement } from "react";
 import { NavbarItems, NavbarObject } from "../../model/navbar";
 import {
   navbarData,
@@ -8,12 +7,12 @@ import {
 } from "../../assets/data/navbarData";
 import { navbarClassname } from "../../style/tailwindClassname/navbar";
 
-function NavbarMinimal(props: { childComponent: ReactElement }) {
+function Navbar() {
   const navbarItems: NavbarItems = navbarData;
   const navbarSocialIcons: NavbarObject[][] = navbarSocialData;
   return (
     <>
-      <div className={navbarClassname.main}>
+      <nav className={navbarClassname.main}>
         <div className={navbarClassname.menuIcons}>
           {navbarItems.navbarItems.map((navbarItem, index) => {
             return (
@@ -33,11 +32,11 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
             );
           })}
         </div>
-        <div className="center w-[70%]">
+        {/* <div className="center w-[70%] pt-20">
           {props.childComponent}
-        </div>{" "}
+        </div>{" "} */}
         {/* w-[80%]*/}
-        <div className={navbarClassname.socialIcons}>
+        {/* <div className={navbarClassname.socialIcons}>
           <div className={navbarClassname.iconDimension}></div>
           {navbarSocialIcons.map((navbarSocialIcon, index) => {
             return (
@@ -68,10 +67,10 @@ function NavbarMinimal(props: { childComponent: ReactElement }) {
           })}
 
           <div className={navbarClassname.iconDimension}></div>
-        </div>
-      </div>
+        </div> */}
+      </nav>
     </>
   );
 }
 
-export default NavbarMinimal;
+export default Navbar;

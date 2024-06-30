@@ -12,5 +12,6 @@
   html {
     @apply text-white;
     @apply font-sansCondensed !important;
+    @apply h-full;
   }
 }

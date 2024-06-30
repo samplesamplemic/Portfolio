@@ -3,6 +3,8 @@ export const carouselClassname = {
     "text-tertiary",
     "font-semibold",
     "float-end",
-    "mt-1",
+    // "mt-1",
+    "relative",
+    "bottom-6",
   ].join(" "),
 };

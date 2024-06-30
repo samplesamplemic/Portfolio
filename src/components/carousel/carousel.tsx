@@ -26,22 +26,21 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <div className="parent p-2">
+    <div className="parent">
       <Carousel
         responsive={responsive}
+        centerMode={false}
         autoPlay={true}
-        autoPlaySpeed={1000}
+        autoPlaySpeed={3000}
         keyBoardControl={true}
-        customTransition="all 10s linear" //all/transform 15s work right
-        transitionDuration={12000}
-        swipeable={true}
+        customTransition="all 2s linear" //"all 10s linear" //all/transform 15s work right
+        // transitionDuration={12000}
+        // swipeable={true}
         draggable={true}
-        infinite={true}
+        // infinite={true}
         partialVisible={false}
-        arrows={false}
-        rewindWithAnimation={true}
-        // centerMode={true}
-        // showDots={true}
+        // arrows={false}
+        showDots={true}
         // dotListClass="custom-dot-list-style"
       >
         {carouselSkills.map((skill, index) => {
@@ -53,14 +52,15 @@ const Slider = () => {
               <img
                 src={skill.skillImageUrl}
                 alt="movie"
+                className="shadow-[rgba(0,0,15,0.5)_3px_3px_3px_2px]"
               />
             </div>
           );
         })}
       </Carousel>
-      <div className={carouselClassname.info}>
+      {/* <div className={carouselClassname.info}>
         Tech stack of my projects on Github
-      </div>
+      </div> */}
     </div>
   );
 };
