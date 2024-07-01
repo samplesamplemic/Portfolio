@@ -19,9 +19,9 @@ const workData: WorkItems = {
         workPosition: "Capgemini - Analyst Consultant",
         workTypology: "Apprenticeship",
         workYear: "2022",
-        workMonth: "Nov - Current",
+        workMonth: "Nov - Now",
         workDescription:
-          "Full-Stack development using agile methodology",
+          "Full-Stack development using agile methodology.",
       },
       {
         workPosition: "Full-Stack Developer",

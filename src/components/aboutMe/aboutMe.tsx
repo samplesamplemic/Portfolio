@@ -2,6 +2,7 @@ import workData from "../../assets/data/workData";
 import WorkPositions from "./workPositions";
 import { AboutMe } from "../../model/work";
 import { aboutMeClassname } from "../../style/tailwindClassname/aboutMe";
+import Social from "../social/Social";
 
 function Work() {
   const aboutMe: AboutMe = workData.workitems.aboutMe;
@@ -27,6 +28,13 @@ function Work() {
             <hr className={aboutMeClassname.divider} />
           </div>
           <WorkPositions />
+        </div>
+        <div>
+          <div className={aboutMeClassname.work}>
+            Social
+            <hr className={aboutMeClassname.divider} />
+          </div>
+          <Social />
         </div>
       </div>
     </>

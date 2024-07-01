@@ -4,7 +4,7 @@ export const photoClassname = {
     //"flex-col",
     "gap-8",
     "items-center",
-    // "justify-center",
+    "justify-between",
     // "text-center",
     // "mb-4",
   ].join(" "),
