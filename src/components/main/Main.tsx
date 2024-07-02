@@ -5,7 +5,7 @@ import Photo from "../photo/photo";
 function Main() {
   return (
     <>
-      <main className="center w-[45%] p-16 gap-12 flex flex-col m-auto">
+      <main className="center w-[45%] py-16 gap-12 flex flex-col m-auto">
         <Slider />
         <Photo />
         <Work />
