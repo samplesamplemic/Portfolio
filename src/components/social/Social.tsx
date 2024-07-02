@@ -2,6 +2,7 @@ import { navbarSocialData } from "../../assets/data/navbarData";
 import { NavbarObject } from "../../model/navbar";
 import "../../style/navbar.scss";
 import { navbarClassname } from "../../style/tailwindClassname/navbar";
+import { ArrowUndo } from "../svg/instagramSvg";
 
 function Social() {
   const navbarSocialIcons: NavbarObject[][] = navbarSocialData;
@@ -39,7 +40,9 @@ function Social() {
             );
           })}
 
-          {/* <div className={navbarClassname.iconDimension}></div> */}
+          <div className="group cursor-pointer p-1">
+            <ArrowUndo />
+          </div>
         </div>
       </div>
     </>
