@@ -3,11 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
     fontFamily: {
-      sansCondensed: ["Encode Sans Semi Condensed", "sans-serif"],
+      sansCondensed: [
+        "Encode Sans Semi Condensed",
+        "sans-serif",
+      ],
     },
+    // fontSize: {
+    //   base: "1.04rem",
+    //   lg: "1.125rem",
+    //   xl: "1.25rem",
+    //   "2xl": "1.5rem",
+    //   "4xl": "2.25rem",
+    // },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial":
+          "radial-gradient(var(--tw-gradient-stops))",
       },
       keyframes: {},
       animation: {},

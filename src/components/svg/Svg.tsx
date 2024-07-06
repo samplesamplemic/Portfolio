@@ -1,3 +1,5 @@
+import { svgClassname } from "../../style/tailwindClassname/svg";
+
 export const InstagramSvg = () => {
   return (
     <>
@@ -10,10 +12,10 @@ export const InstagramSvg = () => {
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className="group-hover:fill-secondary"
+          className={svgClassname.main}
         >
           <g
-            className="group-hover:fill-secondary"
+            className={svgClassname.svg}
             fill="#ffffff"
             fillRule="nonzero"
             stroke="none"
@@ -49,10 +51,10 @@ export const LinkedInSvg = () => {
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className="group-hover:fill-secondary"
+          className={svgClassname.main}
         >
           <g
-            className="group-hover:fill-secondary"
+            className={svgClassname.svg}
             fill="#ffffff"
             fillRule="nonzero"
             stroke="none"
@@ -88,10 +90,10 @@ export const GithubSvg = () => {
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className="group-hover:fill-secondary"
+          className={svgClassname.main}
         >
           <g
-            className="group-hover:fill-secondary"
+            className={svgClassname.svg}
             fill="#ffffff"
             fillRule="nonzero"
             stroke="none"

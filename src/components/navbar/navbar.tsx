@@ -1,73 +1,75 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../style/navbar.scss";
-import { NavbarItems, NavbarObject } from "../../model/navbar";
-import {
-  navbarData,
-  navbarSocialData,
-} from "../../assets/data/navbarData";
+import { NavbarItems } from "../../model/navbar";
+import { navbarData } from "../../assets/data/navbarData";
 import { navbarClassname } from "../../style/tailwindClassname/navbar";
+import { createRef, useEffect, useRef } from "react";
 
 function Navbar() {
+  const inputRef = useRef(null);
   const navbarItems: NavbarItems = navbarData;
-  const navbarSocialIcons: NavbarObject[][] = navbarSocialData;
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    // const test = document.getElementsByClassName("navLink");
+    const test = document.querySelectorAll(".navLink");
+    console.log(location);
+    switch (location.pathname) {
+      case "/":
+        return test[0].classList.add(
+          // "bg-secondary",
+          // "hover:text-white",
+          "underline",
+          "underline-offset-2"
+        );
+      case "/projects":
+        return test[1].classList.add(
+          "underline",
+          "underline-offset-2"
+        );
+      // case "/contactMe":
+      //   return test[2].classList.add("bg-secondary");
+    }
+    // handlebg(test[0]);
+  }, [location]);
+  // const handlebg = (e) => {
+  //   const test = document.querySelectorAll(".navLink");
+  //   test.forEach((el) => {
+  //     if (el == e) {
+  //       el.classList.add("bg-secondary");
+  //     } else {
+  //       el.classList.remove("bg-secondary");
+  //     }
+  //   });
+  //   console.log(e);
+  // };
+
   return (
     <>
       <nav className={navbarClassname.main}>
         <div className={navbarClassname.menuIcons}>
           {navbarItems.navbarItems.map((navbarItem, index) => {
             return (
-              <div key={index}>
-                <Link
-                  to={navbarItem.link}
-                  className={navbarClassname.iconLink}
-                >
-                  {
-                    <navbarItem.icon
-                      className={navbarClassname.iconHover}
-                      title={navbarItem.title}
-                    />
-                  }
-                </Link>
-              </div>
+              <Link
+                to={navbarItem.link}
+                key={index}
+              >
+                {
+                  // <navbarItem.icon
+                  //   className={navbarClassname.iconHover}
+                  //   title={navbarItem.title}
+                  // />
+                  <span
+                    // onClick={(e) => handlebg(e.target)}
+                    className={`${navbarClassname.iconHover} navLink`}
+                  >
+                    {navbarItem.title}
+                  </span>
+                }
+              </Link>
             );
           })}
         </div>
-        {/* <div className="center w-[70%] pt-20">
-          {props.childComponent}
-        </div>{" "} */}
-        {/* w-[80%]*/}
-        {/* <div className={navbarClassname.socialIcons}>
-          <div className={navbarClassname.iconDimension}></div>
-          {navbarSocialIcons.map((navbarSocialIcon, index) => {
-            return (
-              <div
-                className={navbarClassname.groupHoverIcon}
-                key={index}
-              >
-                <a
-                  href={navbarSocialIcon[0].link}
-                  target="_blank"
-                >
-                  <img
-                    src={navbarSocialIcon[0].icon.toString()}
-                    alt={navbarSocialIcon[0].title}
-                    title={navbarSocialIcon[0].title}
-                    className={navbarClassname.socialIconHover}
-                  />
-                </a>
-
-                <img
-                  src={navbarSocialIcon[1].icon.toString()}
-                  alt={navbarSocialIcon[1].title}
-                  title={navbarSocialIcon[1].title}
-                  className={navbarClassname.socialIcon}
-                />
-              </div>
-            );
-          })}
-
-          <div className={navbarClassname.iconDimension}></div>
-        </div> */}
       </nav>
     </>
   );

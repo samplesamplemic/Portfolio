@@ -30,9 +30,11 @@ export const aboutMeClassname = {
     "rounded-sm",
     "bg-opacity-40",
   ].join(" "),
-  description: ["text-lg", "font-medium", "text-secondary"].join(
-    " "
-  ),
+  description: [
+    "text-lg",
+    "font-semibold",
+    "text-secondary",
+  ].join(" "),
   workSection: [
     "flex",
     "flex-col",

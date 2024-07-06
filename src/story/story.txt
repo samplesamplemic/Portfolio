@@ -141,3 +141,67 @@ photo.tsx --
     position: relative;
   }
 }
+
+export const navbarSocialData: NavbarObject[][] = [
+  [
+    {
+      icon: iconLinkedinHover,
+      link: "https://www.linkedin.com/in/michele-la-torre-a8990b235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgJPSISRmTV6NwCJoTDWNNw%3D%3D",
+      title: "LinkedIn",
+    },
+    {
+      icon: iconLinkedin,
+      link: "https://www.linkedin.com/in/michele-la-torre-a8990b235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgJPSISRmTV6NwCJoTDWNNw%3D%3D",
+      title: "LinkedIn",
+    },
+  ],
+  [
+    {
+      icon: iconGithubHover,
+      link: "https://github.com/samplesamplemic",
+      title: "Github",
+    },
+    {
+      icon: iconGithub,
+      link: "https://github.com/samplesamplemic",
+      title: "Github",
+    },
+  ],
+];
+
+ {/* <div className="center w-[70%] pt-20">
+          {props.childComponent}
+        </div>{" "} */}
+        {/* w-[80%]*/}
+        {/* <div className={navbarClassname.socialIcons}>
+          <div className={navbarClassname.iconDimension}></div>
+          {navbarSocialIcons.map((navbarSocialIcon, index) => {
+            return (
+              <div
+                className={navbarClassname.groupHoverIcon}
+                key={index}
+              >
+                <a
+                  href={navbarSocialIcon[0].link}
+                  target="_blank"
+                >
+                  <img
+                    src={navbarSocialIcon[0].icon.toString()}
+                    alt={navbarSocialIcon[0].title}
+                    title={navbarSocialIcon[0].title}
+                    className={navbarClassname.socialIconHover}
+                  />
+                </a>
+
+                <img
+                  src={navbarSocialIcon[1].icon.toString()}
+                  alt={navbarSocialIcon[1].title}
+                  title={navbarSocialIcon[1].title}
+                  className={navbarClassname.socialIcon}
+                />
+              </div>
+            );
+          })}
+
+          <div className={navbarClassname.iconDimension}></div>
+        </div> */}

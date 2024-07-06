@@ -15,24 +15,26 @@ export const navbarClassname = {
     "justify-center w-full z-10 fixed top-0 rounded-md backdrop-blur-[6px] bg-opacity-10",
     // "bg-[#272e3640]",
     "bg-[#272e36db]",
-    "p-4",
+    "p-3",
     "gap-24",
     "shadow-md",
     // "border-b-2",
     // "border-tertiary",
   ].join(" "),
-  iconLink: [
-    "homeLink",
-    "hover:animate-bounce",
+  // iconLink: ["homeLink"].join(" "),
+  // iconDimension: ["w-4 h-4 p-2"].join(" "),
+  groupHoverIcon: ["group cursor-pointer content-center"].join(
+    " "
+  ),
+  iconHover: [
+    // "w-[1.4rem]",
+    "rounded-md",
+    "p-3",
     "hover:text-secondary",
-    "hover:border-b-[3px]",
-    "border-secondary",
+    "hover:transition-all",
+    "hover:duration-300",
+    "hover:scale-125",
   ].join(" "),
-  iconDimension: ["w-6 h-6"].join(" "),
-  groupHoverIcon: [
-    "group cursor-pointer p-1 content-center",
-  ].join(" "),
-  iconHover: ["w-6", " hover:text-secondary"].join(" "),
   socialIcons: [
     "flex",
     //"flex-col",

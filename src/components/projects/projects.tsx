@@ -90,9 +90,10 @@ function Projects() {
               </div>
               <div className="font-light">
                 {`${el.description}`} <br />
-                <span
-                  className={projectsClassname.state}
-                >{`${el.state}`}</span>
+                <span className={projectsClassname.state}>{`${
+                  el.state ? el.state : ""
+                }`}</span>
+                {el.state ? "" : <br />}
               </div>
               <hr className={projectsClassname.divider} />
             </div>
