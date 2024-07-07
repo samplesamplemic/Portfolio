@@ -5,7 +5,7 @@ import Photo from "../photo/photo";
 function MainHome() {
   return (
     <>
-      <Slider />
+      {/* <Slider /> */}
       <Photo />
       <Work />
     </>

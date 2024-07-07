@@ -1,8 +1,6 @@
 import workData from "../../assets/data/workData";
-import photo from "../../assets/icons/logo_dragon_youtube.png";
 import { AboutMe } from "../../model/work";
 import { photoClassname } from "../../style/tailwindClassname/photo";
-import Slider from "../carousel/carousel";
 
 function Photo() {
   const aboutMe: AboutMe = workData.workitems.aboutMe;
@@ -10,7 +8,7 @@ function Photo() {
   return (
     <>
       <div className={photoClassname.main}>
-        <div className="">
+        <div className="flex-1 flex flex-col items-center">
           <div className={photoClassname.secondary}>
             <span className={photoClassname.name}>
               {aboutMe.name}

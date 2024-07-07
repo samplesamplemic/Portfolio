@@ -49,18 +49,37 @@
 }
 
 .center {
-  animation: center 0.33s linear forwards;
+  animation: center 0.66s linear forwards;
 }
 
 @keyframes center {
   0% {
-    // transform: translateY(7%);
-    opacity: 0.2;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
   }
   50% {
     opacity: 0.5;
   }
+  57% {
+    opacity: 0.75;
+  }
   100% {
     opacity: 1;
   }
+}
+
+.navbarIcon {
+  padding: 0.5rem;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.322);
+  border: 1px solid;
+  // animation: center 0.66s linear forwards;
+
+  // &:hover {
+  //   transition-property: all;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //   transition-duration: 150ms;
+  //   color: aliceblue;
+  // }
 }

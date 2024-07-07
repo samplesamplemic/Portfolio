@@ -1,12 +1,13 @@
 export const photoClassname = {
   main: [
     "flex",
+    "flex-row-reverse",
     //"flex-col",
-    "gap-8",
+    // "gap-8",
     "items-center",
     "justify-between",
     // "text-center",
-    // "mb-4",
+    "mt-8",
   ].join(" "),
   imgDiv: [
     "flex-none",
@@ -16,7 +17,7 @@ export const photoClassname = {
   ].join(" "),
   img: [
     "w-20",
-    "md:w-[5.5rem]",
+    "md:w-[5rem]",
     "rounded-full",
     "border-[1.5px]",
     // "shadow-lg",

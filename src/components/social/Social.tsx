@@ -1,5 +1,5 @@
 import "../../style/navbar.scss";
-import { navbarClassname } from "../../style/tailwindClassname/navbar";
+import { socialClassname } from "../../style/tailwindClassname/social";
 import {
   GithubSvg,
   InstagramSvg,
@@ -9,19 +9,17 @@ import {
 function Social() {
   return (
     <>
-      <div>
-        <div className={navbarClassname.socialIcons}>
-          <div className="group cursor-pointer p-1">
-            <InstagramSvg />
-          </div>
-          <div className="group cursor-pointer p-1">
-            <GithubSvg />
-          </div>
-          <div className="group cursor-pointer p-1">
-            <LinkedInSvg />
-          </div>
+      <span className={socialClassname.main}>
+        <div className={socialClassname.group}>
+          <InstagramSvg />
         </div>
-      </div>
+        <div className={socialClassname.group}>
+          <GithubSvg />
+        </div>
+        <div className={socialClassname.group}>
+          <LinkedInSvg />
+        </div>
+      </span>
     </>
   );
 }

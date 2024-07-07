@@ -8,35 +8,30 @@ function Work() {
   const aboutMe: AboutMe = workData.workitems.aboutMe;
   return (
     <>
-      <div className={aboutMeClassname.main}>
-        <div className={aboutMeClassname.aboutMe}>
-          <div className={aboutMeClassname.title}>
+      <section className={aboutMeClassname.main}>
+        <article className={aboutMeClassname.aboutMe}>
+          <h2 className={aboutMeClassname.titleSection}>
             About me
-            <hr className={aboutMeClassname.divider} />
-          </div>
-          <div>
+          </h2>
+          <p>
             <span className={aboutMeClassname.description}>
               {aboutMe.work}
             </span>
             <br />
             {aboutMe.goalDescription}
-          </div>
-        </div>
-        <div className={aboutMeClassname.workSection}>
-          <div className={aboutMeClassname.work}>
-            Work
-            <hr className={aboutMeClassname.divider} />
-          </div>
+          </p>
+        </article>
+        <article className={aboutMeClassname.workSection}>
+          <h2 className={aboutMeClassname.titleSection}>Work</h2>
           <WorkPositions />
-        </div>
-        <div>
-          <div className={aboutMeClassname.work}>
+        </article>
+        <article>
+          <h2 className={aboutMeClassname.titleSection}>
             Social
-            <hr className={aboutMeClassname.divider} />
-          </div>
+          </h2>
           <Social />
-        </div>
-      </div>
+        </article>
+      </section>
     </>
   );
 }

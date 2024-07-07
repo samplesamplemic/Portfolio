@@ -19,13 +19,19 @@ function Navbar() {
         return test[0].classList.add(
           // "bg-secondary",
           // "hover:text-white",
-          "underline",
-          "underline-offset-2"
+          // "underline",
+          // "underline-offset-2",
+          "navbarIcon"
+          // "text-secondary",
+          // "hover:text-white",
+          // "hover:transition-all",
+          // "hover:duration-300"
         );
       case "/projects":
         return test[1].classList.add(
-          "underline",
-          "underline-offset-2"
+          // "underline",
+          // "underline-offset-2"
+          "navbarIcon"
         );
       // case "/contactMe":
       //   return test[2].classList.add("bg-secondary");
@@ -61,7 +67,7 @@ function Navbar() {
                   // />
                   <span
                     // onClick={(e) => handlebg(e.target)}
-                    className={`${navbarClassname.iconHover} navLink`}
+                    className={`${navbarClassname.iconHover} navLink `}
                   >
                     {navbarItem.title}
                   </span>

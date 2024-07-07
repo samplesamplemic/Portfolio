@@ -31,6 +31,7 @@ export default {
       white: "#FFFFFF",
       navbarBG: "#9ca3af",
       black: "#000000",
+      grey: "#cbd5e1",
     },
   },
   plugins: [],

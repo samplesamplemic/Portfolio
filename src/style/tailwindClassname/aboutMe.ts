@@ -1,7 +1,7 @@
 export const aboutMeClassname = {
   main: [
     // "w-[80%]",
-    "m-auto",
+    // "m-auto",
     "flex",
     "flex-col",
     "gap-8",
@@ -15,12 +15,17 @@ export const aboutMeClassname = {
     "gap-2",
     //  "md:w-[50%]"
   ].join(" "),
-  title: [
+  titleSection: [
     "text-xl",
     "font-semibold",
     "flex",
     "flex-col",
-    // "items-center",
+    "w-fit",
+    "border-b-2",
+    "border-opacity-40",
+    "rounded-sm",
+    "border-b-[3px]",
+    "border-grey",
   ].join(" "),
   divider: [
     "w-14",
@@ -42,7 +47,7 @@ export const aboutMeClassname = {
     // "md:w-[50%]",
     // "items-center",
   ].join(" "),
-  work: ["text-xl", "font-semibold", "flex", "flex-col"].join(
-    " "
-  ),
+  // work: ["text-xl", "font-semibold", "flex", "flex-col"].join(
+  //   " "
+  // ),
 };
