@@ -10,6 +10,7 @@ import { projectsClassname } from "../../style/tailwindClassname/projects";
 // import githubIcon from "../../assets/icons/icon-github.png";
 // import githubIconHover from "../../assets/icons/icon-github-hover.png";
 // import { navbarClassname } from "../../style/tailwindClassname/navbar";
+import Slider from "../carousel/carousel";
 
 function Projects() {
   const responsive = {
@@ -23,6 +24,7 @@ function Projects() {
 
   return (
     <>
+      <Slider />
       <div className={projectsClassname.main}>
         <div className="md:hidden flex-[100%] flex flex-col gap-2">
           <h1 className="text-2xl font-extrabold pt-4">
@@ -88,7 +90,7 @@ function Projects() {
                   />
                 </div> */}
               </div>
-              <div className="font-light">
+              <div className="font-light text-left">
                 {`${el.description}`} <br />
                 <span className={projectsClassname.state}>{`${
                   el.state ? el.state : ""

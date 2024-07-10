@@ -6,7 +6,8 @@ export const projectsClassname = {
     "text-center",
     "flex-wrap",
     "md:justify-between",
-    "gap-12",
+    "lg:gap-10",
+    "gap-y-12",
     "justify-center",
     "pb-20",
   ].join(" "),
@@ -44,7 +45,9 @@ export const projectsClassname = {
     "hover:transition-all",
     "hover:duration-300",
   ].join(" "),
-  state: ["text-tertiary font-light"].join(" "),
+  state: [
+    "flex flex-col gap-4 text-tertiary font-light text-center",
+  ].join(" "),
   divider: [
     "w-10",
     "h-1",

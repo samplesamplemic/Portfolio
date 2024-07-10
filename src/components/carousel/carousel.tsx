@@ -58,9 +58,9 @@ const Slider = () => {
           );
         })}
       </Carousel>
-      {/* <div className={carouselClassname.info}>
-        Tech stack of my projects on Github
-      </div> */}
+      <div className={carouselClassname.info}>
+        {/* Tech stack of my projects on Github */}
+      </div>
     </div>
   );
 };
