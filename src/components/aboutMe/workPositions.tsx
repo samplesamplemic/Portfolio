@@ -8,43 +8,37 @@ function WorkPositions() {
   return (
     <>
       {workPositions.map((item, index) => (
+        // <section
+        //   key={index}
+        //   className={workPositionClassname.main}
+        // >
         <div
           key={index}
-          className={workPositionClassname.main}
+          className={workPositionClassname.workPostion}
         >
-          <div className={workPositionClassname.workPostion}>
-            <div className={workPositionClassname.title}>
-              {item.workPosition}
-            </div>
-            <div className="mb-1 flex gap-4 ">
-              <div className="font-medium text-nowrap flex flex-col">
-                <span>{item.workMonth}</span>
-                <span>{item.workYear} </span>
-              </div>
-              <div>
-                <a
-                  target="_blank"
-                  href={item.workLink}
-                  className="text-nowrap text-tertiary font-semibold"
-                >
-                  {item.workTypology}
-                  {/* {" | "} */}
-                </a>
-                <br />
-                {item.workDescription}
-              </div>
-            </div>
-            {/* <div className={workPositionClassname.workYear}>
-              <span className="font-medium">
-                {item.workYear}{" "}
-              </span>
+          <h3 className={workPositionClassname.title}>
+            {item.workPosition}
+          </h3>
+          <div className="mb-1 flex gap-4">
+            <p className="font-medium text-nowrap flex flex-col">
               <span>{item.workMonth}</span>
-            </div> */}
-            {/* {item.workDescription} */}
+              <span>{item.workYear} </span>
+            </p>
+            <p>
+              <a
+                target="_blank"
+                href={item.workLink}
+                className="text-nowrap text-tertiary font-semibold"
+              >
+                {item.workTypology}
+              </a>
+              <br />
+              {item.workDescription}
+            </p>
           </div>
-
-          <hr className={workPositionClassname.divider} />
         </div>
+
+        // </section>
       ))}
     </>
   );
