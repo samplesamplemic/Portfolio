@@ -28,14 +28,8 @@ export const CustomZoomContent = ({
         <figcaption
           className={`${classCaption} z-10 bg-[rgba(0,0,0)] text-white p-8`}
         >
-          {console.log(img)}
+          {/* {console.log(img)} */}
           {img.props.alt}
-          {/* <cite className="zoom-caption-cite">
-            <br />
-            <a className="zoom-caption-link" href={img.props.id}>
-              {img.props.alt}
-            </a>
-          </cite> */}
         </figcaption>
       </figure>
     </>

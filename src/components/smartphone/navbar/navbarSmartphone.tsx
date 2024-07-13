@@ -28,7 +28,7 @@ function NavbarSmartphone() {
               >
                 {
                   <navbarItem.icon
-                    className={navbarClassname.iconHover}
+                    className={navbarClassname.navLink}
                     title={navbarItem.title}
                   />
                 }

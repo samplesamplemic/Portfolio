@@ -18,16 +18,17 @@ const projectData: ProjectItems = {
         garageApp4,
       ],
       title: "Garage API",
+      subTitle: "Spring Rest API",
       description:
-        "Spring Rest API: case study to learn more the OOP, pattern and testing.",
+        "case study to learn more the OOP, pattern and testing.",
       githubSource:
         "https://github.com/samplesamplemic/Garage-API",
     },
     {
       img: [flutterApp],
       title: "Flutter App",
-      description:
-        "Basic Video Platform: I developed a simple video player, using youtube api.",
+      subTitle: "Basic Video Platform",
+      description: "a simple video player, using youtube api.",
       githubSource:
         "https://github.com/samplesamplemic/Yotube_simil",
       state: "in progress",
@@ -35,8 +36,9 @@ const projectData: ProjectItems = {
     {
       img: [dictionaryApp],
       title: "Kotlin App",
+      subTitle: "Dictionary",
       description:
-        "Dictionary: using a free api, a web-screaper to retrieve an image of searched word",
+        "using a free dictionary api and a web-screaper to retrieve an image of the searched word.",
       githubSource:
         "https://github.com/samplesamplemic/Dictionary_2.0",
       state: "in progress",

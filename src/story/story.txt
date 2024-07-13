@@ -205,3 +205,17 @@ export const navbarSocialData: NavbarObject[][] = [
 
           <div className={navbarClassname.iconDimension}></div>
         </div> */}
+
+        {/* <cite className="zoom-caption-cite">
+            <br />
+            <a className="zoom-caption-link" href={img.props.id}>
+              {img.props.alt}
+            </a>
+          </cite> */}
+
+           {/* <CustomZoomImage
+                          img={el}
+                          title={el.title}
+                          description={el.description}
+                          githubSource={el.githubSource}
+                        /> */}

@@ -11,6 +11,7 @@ import { projectsClassname } from "../../style/tailwindClassname/projects";
 // import githubIconHover from "../../assets/icons/icon-github-hover.png";
 // import { navbarClassname } from "../../style/tailwindClassname/navbar";
 import Slider from "../carousel/carousel";
+import { GithubSvg } from "../svg/Svg";
 
 function Projects() {
   const responsive = {
@@ -25,83 +26,67 @@ function Projects() {
   return (
     <>
       <Slider />
-      <div className={projectsClassname.main}>
-        <div className="md:hidden flex-[100%] flex flex-col gap-2">
-          <h1 className="text-2xl font-extrabold pt-4">
-            Projects
-          </h1>
-          <hr
+      <article className={projectsClassname.article}>
+        {/* <div className=" flex-[100%] flex flex-col gap-2"> */}
+        {/* <h1 className="md:hidden flex-[100%] text-start text-2xl font-extrabold pt-4">
+          Projects
+        </h1> */}
+        {/* <hr
             className={`${projectsClassname.divider} w-[80%]`}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
         {projectsData.projectItems.map((el, index) => {
           return (
-            <div
-              className={projectsClassname.singleProj}
+            <section
+              className={projectsClassname.section}
               key={index}
             >
-              <Carousel responsive={responsive}>
-                {el.img.map((img) => {
-                  return (
-                    <div
-                      className="sliderProj m-2 rounded-md shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]"
-                      key={index}
-                    >
-                      <Zoom ZoomContent={CustomZoomContent}>
+              <figure className="m-2 rounded-md">
+                <Carousel responsive={responsive}>
+                  {el.img.map((img) => {
+                    return (
+                      <Zoom
+                        ZoomContent={CustomZoomContent}
+                        key={index}
+                      >
                         <img
-                          className={projectsClassname.img}
+                          className={`${projectsClassname.img} rounded-md m-2 hover:scale-110 hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px] hover:transition-all hover:duration-300 `}
                           src={img}
                           alt={el.title}
                         />
-                        {/* <CustomZoomImage
-                          img={el}
-                          title={el.title}
-                          description={el.description}
-                          githubSource={el.githubSource}
-                        /> */}
                       </Zoom>
-                    </div>
-                  );
-                })}
-              </Carousel>
-              <div className={projectsClassname.projectDiv}>
-                <a
-                  href={el.githubSource}
-                  target="_blank"
-                  className={projectsClassname.title}
-                  title="Github source"
-                >
-                  {el.title}
-                </a>
-                {/* <div className="group cursor-pointer border hover:border-secondary rounded-md">
+                    );
+                  })}
+                </Carousel>
+                <h2>
                   <a
                     href={el.githubSource}
                     target="_blank"
+                    className={projectsClassname.a}
+                    title="Github source"
                   >
-                    <img
-                      src={githubIconHover}
-                      className={`${navbarClassname.socialIconHover} m-1`}
-                    />
+                    {el.title}
+                    <span>
+                      <GithubSvg />
+                    </span>
                   </a>
-
-                  <img
-                    src={githubIcon}
-                    className={`${navbarClassname.socialIcon} m-1`}
-                  />
-                </div> */}
-              </div>
-              <div className="font-light text-left">
-                {`${el.description}`} <br />
-                <span className={projectsClassname.state}>{`${
-                  el.state ? el.state : ""
-                }`}</span>
-                {el.state ? "" : <br />}
-              </div>
+                </h2>
+                <figcaption className="font-light text-left indent-1">
+                  <strong className="font-medium italic">
+                    {`${el.subTitle}: `}
+                  </strong>
+                  {`${el.description}`} <br />
+                  <span className={projectsClassname.state}>{`${
+                    el.state ? el.state : ""
+                  }`}</span>
+                  {el.state ? "" : <br />}
+                </figcaption>
+              </figure>
               <hr className={projectsClassname.divider} />
-            </div>
+            </section>
           );
         })}
-      </div>
+      </article>
     </>
   );
 }

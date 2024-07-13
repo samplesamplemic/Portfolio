@@ -1,5 +1,5 @@
 export const projectsClassname = {
-  main: [
+  article: [
     "flex",
     "flex-row",
     "items-center",
@@ -11,7 +11,7 @@ export const projectsClassname = {
     "justify-center",
     "pb-20",
   ].join(" "),
-  singleProj: [
+  section: [
     "parent",
     "md:w-[45%]",
     "w-[75%]",
@@ -19,29 +19,35 @@ export const projectsClassname = {
     "flex-col",
     "gap-2",
   ].join(" "),
-  img: ["w-40", "h-40", "object-cover"].join(" "),
-  projectDiv: [
+  figure: ["m-2", "group", "rounded-md"].join(" "),
+  img: ["w-40", "h-32", "object-cover"].join(" "),
+  button: [
     "mt-2",
+    "mb-4",
     "flex",
+    "w-full",
     "gap-2",
     "items-center",
     "justify-center",
   ].join(" "),
-  title: [
+  a: [
+    "flex",
+    "justify-around",
     "text-center",
     "text-nowrap",
-    "px-3",
+    "group",
+    // "px-1",
     "py-1",
-    // "m-4",
+    "mb-2",
     "text-secondary",
     "font-semibold",
     "text-xl",
     "rounded-md",
-    "border",
+    // "border",
     "shadow-[rgba(0,0,0,0.322)_3px_3px_3px_3px]",
     "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",
-    "hover:text-white",
-    "hover:bg-secondary",
+    // "hover:text-white",
+    // "hover:bg-secondary",
     "hover:transition-all",
     "hover:duration-300",
   ].join(" "),

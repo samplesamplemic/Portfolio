@@ -1,42 +1,20 @@
 export const navbarClassname = {
-  main: [
-    // "w-full",
+  nav: [
     "flex",
-    // // "flex-1",
-    // "gap-8",
-    // "flex-col",
     "justify-center",
-    // "items-center",
-    // "flex-col",
     "font-medium",
     "w-full z-10 fixed top-0 rounded-md backdrop-blur-[6px] bg-opacity-10",
-    // "bg-[#272e3640]",
     "bg-[#272e36db]",
     "py-3",
     "shadow-md",
   ].join(" "),
-  menuIcons: [
+  header: [
     "flex",
-    // "flex-col",
     "font-medium",
     "justify-around",
     "w-[45%]",
-    // " w-full z-10 fixed top-0 rounded-md backdrop-blur-[6px] bg-opacity-10",
-    // "bg-[#272e3640]",
-    // "bg-[#272e36db]",
-    // "p-3",
-    // "gap-24",
-    // "shadow-md",
-    // "border-b-2",
-    // "border-tertiary",
   ].join(" "),
-  // iconLink: ["homeLink"].join(" "),
-  // iconDimension: ["w-4 h-4 p-2"].join(" "),
-  groupHoverIcon: ["group cursor-pointer content-center"].join(
-    " "
-  ),
-  iconHover: [
-    // "w-[1.4rem]",
+  navLink: [
     "rounded-md",
     "p-2",
     "hover:text-secondary",
@@ -45,10 +23,4 @@ export const navbarClassname = {
     "hover:border",
     "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",
   ].join(" "),
-  socialIcons: ["flex", "gap-16", "p-4"].join(" "),
-  group: ["group", "cursor-pointer", "p-1"].join(" "),
-  socialIcon: ["w-6", " group-hover:hidden"].join(" "),
-  socialIconHover: ["w-6", "hidden", "group-hover:block"].join(
-    " "
-  ),
 };

@@ -5,6 +5,7 @@ export interface ProjectItems {
 export interface ProjectObject {
   img: string[];
   title: string;
+  subTitle: string;
   description: string;
   state?: string;
   githubSource: string;
