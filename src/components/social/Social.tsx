@@ -14,7 +14,7 @@ function Social() {
           <InstagramSvg />
         </div>
         <div className={socialClassname.group}>
-          <GithubSvg />
+          <GithubSvg link="https://github.com/samplesamplemic" />
         </div>
         <div className={socialClassname.group}>
           <LinkedInSvg />

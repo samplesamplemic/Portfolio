@@ -72,8 +72,11 @@
 
 .navbarIcon {
   padding: 0.5rem;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.322);
-  border: 1px solid;
+  // box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.322);
+  // border: 1px solid;
+  text-shadow: 1px 1px 10px rgba(30, 136, 196, 1);
+  font-size: 1.25rem;
+  color: rgba(30, 136, 196, 1);
   // animation: center 0.66s linear forwards;
 
   // &:hover {

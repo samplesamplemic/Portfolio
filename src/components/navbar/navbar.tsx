@@ -11,7 +11,6 @@ function Navbar() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
     const test = document.querySelectorAll(".navLink");
-    // console.log(location);
     switch (location.pathname) {
       case "/":
         return test[0].classList.add("navbarIcon");
@@ -34,7 +33,7 @@ function Navbar() {
               >
                 {
                   <span
-                    className={`${navbarClassname.navLink} navLink `}
+                    className={`${navbarClassname.navLink} navLink`}
                   >
                     {navbarItem.title}
                   </span>

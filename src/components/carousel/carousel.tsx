@@ -9,8 +9,8 @@ const carouselSkills: Skill[] = workData.workitems.skills;
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1200 },
-    items: 4,
-    slidesToSlide: 4,
+    items: 3,
+    slidesToSlide: 3,
   },
   tablet: {
     breakpoint: { max: 1200, min: 768 },
@@ -34,13 +34,13 @@ const Slider = () => {
         autoPlaySpeed={3000}
         keyBoardControl={true}
         customTransition="all 2s linear" //"all 10s linear" //all/transform 15s work right
+        draggable={true}
+        partialVisible={false}
+        showDots={true}
         // transitionDuration={12000}
         // swipeable={true}
-        draggable={true}
         // infinite={true}
-        partialVisible={false}
         // arrows={false}
-        showDots={true}
         // dotListClass="custom-dot-list-style"
       >
         {carouselSkills.map((skill, index) => {
@@ -58,8 +58,8 @@ const Slider = () => {
           );
         })}
       </Carousel>
-      <div className={carouselClassname.info}>
-        {/* Tech stack of my projects on Github */}
+      <div className={`${carouselClassname.info}`}>
+        Tech stack
       </div>
     </div>
   );

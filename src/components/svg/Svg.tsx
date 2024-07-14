@@ -78,19 +78,23 @@ export const LinkedInSvg = () => {
     </>
   );
 };
-export const GithubSvg = () => {
+export const GithubSvg = (props: {
+  link: string;
+  tailwindCss?: string;
+}) => {
   return (
     <>
       <a
-        href="https://github.com/samplesamplemic"
+        href={props.link}
         target="_blank"
+        title="github source"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className={svgClassname.main}
+          className={`${svgClassname.main} ${props.tailwindCss}`}
         >
           <g
             className={svgClassname.svg}

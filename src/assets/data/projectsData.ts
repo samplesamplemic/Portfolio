@@ -17,10 +17,10 @@ const projectData: ProjectItems = {
         garageApp3,
         garageApp4,
       ],
-      title: "Garage API",
-      subTitle: "Spring Rest API",
+      title: "Spring Rest API",
+      subTitle: "Parking API",
       description:
-        "case study to learn more the OOP, pattern and testing.",
+        "case study to learn more the OOP, design pattern and testing.",
       githubSource:
         "https://github.com/samplesamplemic/Garage-API",
     },

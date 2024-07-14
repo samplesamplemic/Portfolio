@@ -1,10 +1,12 @@
 export const carouselClassname = {
   info: [
+    "text-sm",
     "text-tertiary",
-    "font-semibold",
+    "font-bold",
     "float-end",
     // "mt-1",
+    "mr-2",
     "relative",
-    "bottom-6",
+    "bottom-2",
   ].join(" "),
 };

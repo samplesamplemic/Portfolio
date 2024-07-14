@@ -20,7 +20,9 @@ export const navbarClassname = {
     "hover:text-secondary",
     "hover:transition-all",
     "hover:duration-300",
-    "hover:border",
-    "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",
+    // "hover:border",
+    // "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",
+    "hover:drop-shadow-[rgba(30,136,196,1)_1px_1px_10px] ",
+    "hover:text-xl",
   ].join(" "),
 };
