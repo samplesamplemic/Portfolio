@@ -76,7 +76,6 @@ function Projects() {
                   <h2 className={projectsClassname.a}>
                     {el.title}
                   </h2>
-                  <p></p>
                   <span className="flex">
                     <em className="font-medium italic flex-1 item-center">
                       {`${el.subTitle}`}
