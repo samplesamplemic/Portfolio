@@ -22,10 +22,12 @@ export const photoClassname = {
   ].join(" "),
   h2: [
     "text-secondary",
-    "md:text-2xl",
+    "md:text-3xl",
     "text-xl",
-    "font-medium",
+    "font-base",
     "tracking-wide",
+    "drop-shadow-[rgba(30,136,196,1)_1px_1px_10px]",
+    "neonEffectText",
   ].join(" "),
   img: [
     "w-20",
