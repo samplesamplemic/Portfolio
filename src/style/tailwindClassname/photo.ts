@@ -26,7 +26,7 @@ export const photoClassname = {
     "text-xl",
     "font-base",
     "tracking-wide",
-    "drop-shadow-[rgba(30,136,196,1)_1px_1px_10px]",
+    "drop-shadow-[rgba(30,136,196,1)_1px_1px_20px]",
     "neonEffectText",
   ].join(" "),
   img: [

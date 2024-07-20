@@ -45,7 +45,7 @@ export const projectsClassname = {
     "text-lg",
     "rounded-md",
     "drop-shadow-[rgba(30,136,196,1)_1px_1px_10px]",
-    "neonEffectText",
+    // "neonEffectText",
     // "border",
     // "shadow-[rgba(0,0,0,0.322)_3px_3px_3px_3px]",
     // "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",

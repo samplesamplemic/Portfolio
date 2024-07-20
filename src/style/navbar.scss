@@ -75,11 +75,12 @@
 }
 .navbarIcon {
   @extend %myTextShadow;
-  padding: 0.5rem;
+  // padding: 0.5rem;
   // box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.322);
   // border: 1px solid;
   font-size: 1.25rem;
   color: rgba(30, 136, 196, 1);
+  text-decoration: underline;
   // animation: center 0.66s linear forwards;
 
   // &:hover {

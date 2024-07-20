@@ -16,6 +16,7 @@
     @apply h-full;
   }
 }
+
 ::-webkit-scrollbar {
   width: 0.4rem;
 }
@@ -34,4 +35,9 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #4f4516;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
 }

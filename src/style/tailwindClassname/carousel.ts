@@ -1,6 +1,6 @@
 export const carouselClassname = {
   small: [
-    // "text-sm",
+    "text-sm",
     "text-tertiary",
     "font-bold",
     "float-end",

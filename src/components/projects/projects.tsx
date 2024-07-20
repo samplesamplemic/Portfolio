@@ -45,9 +45,17 @@ function Projects() {
               key={index}
             >
               <figure className="m-2 flex flex-col">
-                <h2 className={projectsClassname.h2}>
-                  {el.title}
-                </h2>
+                <header className="flex justify-around">
+                  <h2 className={projectsClassname.h2}>
+                    {el.title}
+                  </h2>
+                  <GithubSvg
+                    link={el.githubSource}
+                    tailwindCss="scale-100 rounded-full shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]"
+                    // rgba(114,158,188,1)
+                  />
+                </header>
+
                 <Carousel responsive={responsive}>
                   {el.img.map((img) => {
                     return (
@@ -78,20 +86,19 @@ function Projects() {
                     />
                   </span> */}
                 {/* </h2> */}
-                <figcaption className="font-light text-left flex flex-col gap-1">
-                  <span className="flex">
-                    <em className="font-medium italic flex-1 item-center">
-                      {`${el.subTitle}`}
-                    </em>
-                    <GithubSvg
+                <figcaption className="text-left  gap-1">
+                  {/* <span className="flex"> */}
+
+                  {/* <GithubSvg
                       link={el.githubSource}
                       tailwindCss="scale-105 rounded-full shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]"
                       // rgba(114,158,188,1)
-                    />
-                  </span>
-                  <span className="w-full ">
+                    /> */}
+                  {/* </span> */}
+                  <p className="w-full text-justify">
+                    <i className="">{`${el.subTitle}: `}</i>
                     {`${el.description}`} <br />
-                  </span>
+                  </p>
                   <span className={projectsClassname.state}>{`${
                     el.state ? el.state : ""
                   }`}</span>
