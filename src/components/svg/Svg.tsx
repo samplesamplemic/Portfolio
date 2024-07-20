@@ -1,6 +1,8 @@
 import { svgClassname } from "../../style/tailwindClassname/svg";
 
-export const InstagramSvg = () => {
+export const InstagramSvg = (props: {
+  tailwindCss?: string;
+}) => {
   return (
     <>
       <a
@@ -12,7 +14,7 @@ export const InstagramSvg = () => {
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className={svgClassname.main}
+          className={`${svgClassname.main} ${props.tailwindCss}`}
         >
           <g
             className={svgClassname.svg}
@@ -39,7 +41,7 @@ export const InstagramSvg = () => {
     </>
   );
 };
-export const LinkedInSvg = () => {
+export const LinkedInSvg = (props: { tailwindCss?: string }) => {
   return (
     <>
       <a
@@ -51,7 +53,7 @@ export const LinkedInSvg = () => {
           viewBox="0,0,256,256"
           width="26px"
           height="26px"
-          className={svgClassname.main}
+          className={`${svgClassname.main} ${props.tailwindCss}`}
         >
           <g
             className={svgClassname.svg}

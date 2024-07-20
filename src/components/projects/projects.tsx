@@ -26,7 +26,10 @@ function Projects() {
   return (
     <>
       <Slider />
-      <article className={projectsClassname.article}>
+      <article
+        aria-label="Image Carousel"
+        className={projectsClassname.article}
+      >
         {/* <div className=" flex-[100%] flex flex-col gap-2"> */}
         {/* <h1 className="md:hidden flex-[100%] text-start text-2xl font-extrabold pt-4">
           Projects
@@ -42,6 +45,9 @@ function Projects() {
               key={index}
             >
               <figure className="m-2 flex flex-col">
+                <h2 className={projectsClassname.h2}>
+                  {el.title}
+                </h2>
                 <Carousel responsive={responsive}>
                   {el.img.map((img) => {
                     return (
@@ -73,9 +79,6 @@ function Projects() {
                   </span> */}
                 {/* </h2> */}
                 <figcaption className="font-light text-left flex flex-col gap-1">
-                  <h2 className={projectsClassname.a}>
-                    {el.title}
-                  </h2>
                   <span className="flex">
                     <em className="font-medium italic flex-1 item-center">
                       {`${el.subTitle}`}

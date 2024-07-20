@@ -10,13 +10,13 @@ function WorkPositions() {
       {workPositions.map((item, index) => (
         <article
           key={index}
-          className={workPositionClassname.workPostion}
+          className={workPositionClassname.article}
         >
-          <h3 className={workPositionClassname.title}>
+          <h3 className={workPositionClassname.h3}>
             {item.workPosition}
           </h3>
-          <p className="mb-1 flex gap-4">
-            <span className="font-medium text-nowrap flex flex-col">
+          <p className={workPositionClassname.p}>
+            <span className={workPositionClassname.span}>
               <time>{item.workMonth}</time>
               <time>{item.workYear} </time>
             </span>
@@ -24,7 +24,7 @@ function WorkPositions() {
               <a
                 target="_blank"
                 href={item.workLink}
-                className="text-nowrap text-tertiary font-semibold"
+                className={workPositionClassname.a}
               >
                 {item.workTypology}
               </a>

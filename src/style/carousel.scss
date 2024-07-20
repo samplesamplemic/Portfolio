@@ -1,43 +1,38 @@
-.slider {
-  // margin: 0 1rem;
-  // overflow: hidden;
-  margin-right: 1rem;
-}
-
-.slider img {
-  width: 10rem;
-  height: 5rem;
-  object-fit: fill;
-  // max-width: 12.5rem;
-  border-radius: 10px;
-  margin-right: 0.3rem;
+.carousel {
+  .react-multi-carousel-list {
+    padding-block: 1.5rem;
+  }
 }
 
 .react-multi-carousel-item {
   margin-right: 1px;
 }
 
-.react-multi-carousel-list {
-  padding-block: 1rem;
-}
-
-.react-multi-carousel-track {
-  /* display: flex; */
-  // align-items: center;
+.slider {
+  margin-right: 1rem;
+  img {
+    width: 10rem;
+    // height: 5rem;
+    // max-width: 12.5rem;
+    object-fit: fill;
+    border-radius: 10px;
+    margin-right: 0.3rem;
+  }
 }
 
 .react-multiple-carousel__arrow {
   background: rgba(0, 0, 0, 0.5);
-}
 
-.react-multiple-carousel__arrow::before {
-  font-weight: bold;
-}
+  &::before {
+    font-weight: bold;
+  }
 
-.react-multiple-carousel__arrow--right {
-  right: -1rem;
-}
+  &--right {
+    font-weight: bold;
+    right: -1rem;
+  }
 
-.react-multiple-carousel__arrow--left {
-  left: -1rem;
+  &--left {
+    left: -1rem;
+  }
 }

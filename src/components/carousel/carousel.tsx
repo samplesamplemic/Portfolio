@@ -26,7 +26,10 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <div className="parent">
+    <article
+      aria-label="Image Carousel"
+      className="carousel"
+    >
       <Carousel
         responsive={responsive}
         centerMode={false}
@@ -45,23 +48,23 @@ const Slider = () => {
       >
         {carouselSkills.map((skill, index) => {
           return (
-            <div
+            <figure
               className="slider"
               key={index}
             >
               <img
                 src={skill.skillImageUrl}
                 alt="movie"
-                className="shadow-[rgba(0,0,15,0.5)_3px_3px_3px_2px]"
+                className={carouselClassname.img}
               />
-            </div>
+            </figure>
           );
         })}
       </Carousel>
-      <div className={`${carouselClassname.info}`}>
+      <small className={carouselClassname.small}>
         Tech stack
-      </div>
-    </div>
+      </small>
+    </article>
   );
 };
 export default Slider;

@@ -1,6 +1,6 @@
 export const carouselClassname = {
-  info: [
-    "text-sm",
+  small: [
+    // "text-sm",
     "text-tertiary",
     "font-bold",
     "float-end",
@@ -9,4 +9,5 @@ export const carouselClassname = {
     "relative",
     "bottom-2",
   ].join(" "),
+  img: ["shadow-[rgba(0,0,15,0.5)_3px_3px_3px_2px]"].join(" "),
 };

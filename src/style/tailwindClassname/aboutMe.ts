@@ -3,7 +3,7 @@ export const aboutMeClassname = {
   article: [
     "flex",
     "flex-col",
-    "gap-2",
+    // "gap-2",
     //  "md:w-[50%]"
   ].join(" "),
   h2: [
@@ -18,5 +18,5 @@ export const aboutMeClassname = {
     "border-b-[3px]",
     "border-grey",
   ].join(" "),
-  span: ["text-lg", "font-semibold", "text-secondary"].join(" "),
+  h3: ["text-lg", "font-semibold", "text-secondary"].join(" "),
 };

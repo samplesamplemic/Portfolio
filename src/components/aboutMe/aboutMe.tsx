@@ -11,13 +11,9 @@ function Work() {
       <article className={aboutMeClassname.section}>
         <section className={aboutMeClassname.article}>
           <h2 className={aboutMeClassname.h2}>About me</h2>
-          <p>
-            <span className={aboutMeClassname.span}>
-              {aboutMe.work}
-            </span>
-            <br />
-            {aboutMe.goalDescription}
-          </p>
+
+          <h3 className={aboutMeClassname.h3}>{aboutMe.work}</h3>
+          <p>{aboutMe.goalDescription}</p>
         </section>
         <section className={aboutMeClassname.article}>
           <h2 className={aboutMeClassname.h2}>Work</h2>
