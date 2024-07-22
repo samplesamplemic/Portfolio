@@ -13,6 +13,7 @@ export const navbarClassname = {
     "font-medium",
     "justify-around",
     "w-[45%]",
+    "max-w-[33rem]",
     "items-center",
   ].join(" "),
   navLink: [

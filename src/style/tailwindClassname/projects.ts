@@ -20,8 +20,23 @@ export const projectsClassname = {
     "self-start",
     "gap-2",
   ].join(" "),
-  figure: ["group", "rounded-md"].join(" "),
-  img: ["w-40", "h-32", "object-cover"].join(" "),
+  figure: ["m-2", "flex", "flex-col"].join(" "),
+  header: [
+    "flex",
+    "justify-between",
+    "items-center",
+    "mb-2",
+  ].join(" "),
+  img: [
+    "w-40",
+    "h-32",
+    "object-cover",
+    "rounded-md",
+    "hover:scale-110",
+    "hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px]",
+    "hover:transition-all",
+    "hover:duration-300",
+  ].join(" "),
   button: [
     "mt-2",
     "mb-4",
@@ -56,6 +71,11 @@ export const projectsClassname = {
   ].join(" "),
   state: [
     "flex flex-col gap-4 text-tertiary font-medium text-center",
+  ].join(" "),
+  svg: [
+    "scale-100",
+    "rounded-full",
+    "shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]",
   ].join(" "),
   divider: [
     "w-10",

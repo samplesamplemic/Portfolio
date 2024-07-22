@@ -35,7 +35,6 @@ function Navbar() {
                   <span
                     className={`${navbarClassname.navLink} navLink`}
                   >
-                    {/* {navbarItem.title} */}
                     <navbarItem.icon
                       width={25}
                       title={navbarItem.title}

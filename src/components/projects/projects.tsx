@@ -30,31 +30,22 @@ function Projects() {
         aria-label="Image Carousel"
         className={projectsClassname.article}
       >
-        {/* <div className=" flex-[100%] flex flex-col gap-2"> */}
-        {/* <h1 className="md:hidden flex-[100%] text-start text-2xl font-extrabold pt-4">
-          Projects
-        </h1> */}
-        {/* <hr
-            className={`${projectsClassname.divider} w-[80%]`}
-          /> */}
-        {/* </div> */}
         {projectsData.projectItems.map((el, index) => {
           return (
             <section
               className={projectsClassname.section}
               key={index}
             >
-              <figure className="m-2 flex flex-col">
-                <header className="flex justify-around">
+              <figure className={projectsClassname.figure}>
+                {/* <header className={projectsClassname.header}>
                   <h2 className={projectsClassname.h2}>
                     {el.title}
                   </h2>
                   <GithubSvg
                     link={el.githubSource}
-                    tailwindCss="scale-100 rounded-full shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]"
-                    // rgba(114,158,188,1)
+                    tailwindCss={projectsClassname.svg}
                   />
-                </header>
+                </header> */}
 
                 <Carousel responsive={responsive}>
                   {el.img.map((img) => {
@@ -64,7 +55,7 @@ function Projects() {
                         key={index}
                       >
                         <img
-                          className={`${projectsClassname.img} rounded-md hover:scale-110 hover:shadow-[rgba(0,0,15,0.5)_3px_3px_3px_3px] hover:transition-all hover:duration-300 `}
+                          className={projectsClassname.img}
                           src={img}
                           alt={el.title}
                         />
@@ -72,29 +63,16 @@ function Projects() {
                     );
                   })}
                 </Carousel>
-                {/* <h2 className="flex justify-around items-center mb-4"> */}
-                {/* <strong
-                    className={projectsClassname.a}
-                    title="Github source"
-                  >
-                    {el.title}
-                  </strong> */}
-                {/* <span>
+                <figcaption className="text-left  gap-1">
+                  <header className={projectsClassname.header}>
+                    <h2 className={projectsClassname.h2}>
+                      {el.title}
+                    </h2>
                     <GithubSvg
                       link={el.githubSource}
-                      tailwindCss="scale-105"
+                      tailwindCss={projectsClassname.svg}
                     />
-                  </span> */}
-                {/* </h2> */}
-                <figcaption className="text-left  gap-1">
-                  {/* <span className="flex"> */}
-
-                  {/* <GithubSvg
-                      link={el.githubSource}
-                      tailwindCss="scale-105 rounded-full shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]"
-                      // rgba(114,158,188,1)
-                    /> */}
-                  {/* </span> */}
+                  </header>
                   <p className="w-full text-justify">
                     <i className="">{`${el.subTitle}: `}</i>
                     {`${el.description}`} <br />
@@ -105,7 +83,6 @@ function Projects() {
                   {el.state ? "" : <br />}
                 </figcaption>
               </figure>
-              {/* <hr className={projectsClassname.divider} /> */}
             </section>
           );
         })}

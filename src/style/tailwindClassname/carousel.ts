@@ -1,9 +1,10 @@
 export const carouselClassname = {
   small: [
     "text-sm",
-    "text-tertiary",
+    "text-secondary",
     "font-bold",
     "float-end",
+    "drop-shadow-[rgba(30,136,196,1)_1px_1px_10px]",
     // "mt-1",
     "mr-2",
     "relative",
