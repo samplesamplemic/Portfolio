@@ -27,6 +27,7 @@ export const projectsClassname = {
     "items-center",
     "mb-2",
   ].join(" "),
+  figcaption: ["text-left", "gap-1"].join(" "),
   img: [
     "w-40",
     "h-32",
@@ -77,6 +78,7 @@ export const projectsClassname = {
     "rounded-full",
     "shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]",
   ].join(" "),
+  p: ["w-full", "text-justify"].join(" "),
   divider: [
     "w-10",
     "h-1",

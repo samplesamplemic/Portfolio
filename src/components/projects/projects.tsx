@@ -63,7 +63,9 @@ function Projects() {
                     );
                   })}
                 </Carousel>
-                <figcaption className="text-left  gap-1">
+                <figcaption
+                  className={projectsClassname.figcaption}
+                >
                   <header className={projectsClassname.header}>
                     <h2 className={projectsClassname.h2}>
                       {el.title}
@@ -73,7 +75,7 @@ function Projects() {
                       tailwindCss={projectsClassname.svg}
                     />
                   </header>
-                  <p className="w-full text-justify">
+                  <p className={projectsClassname.p}>
                     <i className="">{`${el.subTitle}: `}</i>
                     {`${el.description}`} <br />
                   </p>
