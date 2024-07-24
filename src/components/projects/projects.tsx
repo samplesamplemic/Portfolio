@@ -7,9 +7,6 @@ import projectData from "../../assets/data/projectsData";
 import { ProjectItems } from "../../model/project";
 import "react-multi-carousel/lib/styles.css";
 import { projectsClassname } from "../../style/tailwindClassname/projects";
-// import githubIcon from "../../assets/icons/icon-github.png";
-// import githubIconHover from "../../assets/icons/icon-github-hover.png";
-// import { navbarClassname } from "../../style/tailwindClassname/navbar";
 import Slider from "../carousel/carousel";
 import { GithubSvg } from "../svg/Svg";
 
@@ -37,16 +34,6 @@ function Projects() {
               key={index}
             >
               <figure className={projectsClassname.figure}>
-                {/* <header className={projectsClassname.header}>
-                  <h2 className={projectsClassname.h2}>
-                    {el.title}
-                  </h2>
-                  <GithubSvg
-                    link={el.githubSource}
-                    tailwindCss={projectsClassname.svg}
-                  />
-                </header> */}
-
                 <Carousel responsive={responsive}>
                   {el.img.map((img) => {
                     return (

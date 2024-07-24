@@ -49,7 +49,7 @@ const Slider = () => {
         {carouselSkills.map((skill, index) => {
           return (
             <figure
-              className="slider"
+              className={carouselClassname.figure}
               key={index}
             >
               <img

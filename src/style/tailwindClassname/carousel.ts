@@ -1,4 +1,5 @@
 export const carouselClassname = {
+  figure: ["slider"].join(" "),
   small: [
     "text-sm",
     "text-secondary",
