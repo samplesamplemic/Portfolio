@@ -1,10 +1,3 @@
-import { HomeIcon as HomeHover } from "@heroicons/react/24/solid";
-import { HomeIcon as Home } from "@heroicons/react/24/outline";
-// import { ArchiveBoxIcon } from "@heroicons/react/24/solid";
-import { NewspaperIcon as NewspaperIconHover } from "@heroicons/react/24/solid";
-import { NewspaperIcon } from "@heroicons/react/24/outline";
-import githubLogo from "../../../assets/icons/icon-github.png";
-import githubLogoHover from "../../../assets/icons/icon-github-hover.png";
 import { Link } from "react-router-dom";
 import { navbarData } from "../../../assets/data/navbarData";
 import { NavbarItems } from "../../../model/navbar";

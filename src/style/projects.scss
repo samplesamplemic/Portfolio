@@ -13,12 +13,11 @@
   display: flex;
   justify-content: center;
   width: fit-content;
-}
-
-.sliderProj img {
-  // width: 100%;
-  max-width: 12.5rem;
-  // border-radius: 10px;
+  & img {
+    // width: 100%;
+    max-width: 12.5rem;
+    // border-radius: 10px;
+  }
 }
 
 .projects {
@@ -45,8 +44,4 @@
 .react-multi-carousel-dot.react-multi-carousel-dot--active
   button {
   background: rgb(114, 101, 58) !important;
-}
-
-.test:hover {
-  transition: all 0.5s ease-out;
 }

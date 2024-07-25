@@ -10,14 +10,14 @@ function Navbar() {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    const test = document.querySelectorAll(".navLink");
+    const iconNavbar = document.querySelectorAll(".navLink");
     switch (location.pathname) {
       case "/":
-        return test[0].classList.add("navbarIcon");
+        return iconNavbar[0].classList.add("navbarIcon");
       case "/projects":
-        return test[1].classList.add("navbarIcon");
+        return iconNavbar[1].classList.add("navbarIcon");
       // case "/contactMe":
-      //   return test[2].classList.add("bg-secondary");
+      //   return iconNavbar[2].classList.add("bg-secondary");
     }
   }, [location]);
 
