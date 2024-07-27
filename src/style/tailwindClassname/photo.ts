@@ -15,7 +15,7 @@ export const photoClassname = {
   ].join(" "),
   h1: [
     "md:text-4xl",
-    "text-2xl",
+    "text-3xl",
     "text-nowrap",
     "font-bold",
     "tracking-wide",
@@ -23,7 +23,7 @@ export const photoClassname = {
   h2: [
     "text-secondary",
     "md:text-3xl",
-    "text-xl",
+    "text-2xl",
     "font-base",
     "tracking-wide",
     "drop-shadow-[rgba(30,136,196,1)_1px_1px_20px]",
