@@ -14,15 +14,14 @@
   justify-content: center;
   width: fit-content;
   & img {
-    // width: 100%;
     max-width: 12.5rem;
+    // width: 100%;
     // border-radius: 10px;
   }
 }
 
 .projects {
   .react-multi-carousel-list {
-    // padding-block: 2rem;
     padding-block: 0.5rem;
     padding-bottom: 1rem;
   }
@@ -33,7 +32,6 @@
   justify-content: center;
 }
 .react-multi-carousel-track {
-  /* display: flex; */
   align-items: center;
 }
 

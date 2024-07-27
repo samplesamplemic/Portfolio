@@ -1,10 +1,13 @@
 export const mainClassname = {
   main: [
     "center",
-    "w-[45%]",
-    "min-w-[29rem]",
-    "max-w-[33rem]",
-    "py-16",
+    "md:w-[45%]",
+    "md:min-w-[29rem]",
+    "md:max-w-[33rem]",
+    "md:px-0",
+    "md:py-16",
+    "pb-12",
+    "px-4",
     "gap-12",
     "flex",
     "flex-col",

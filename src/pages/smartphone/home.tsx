@@ -1,16 +1,13 @@
-import Photo from "../../components/photo/photo";
+import Main from "../../components/main/Main";
+import MainHome from "../../components/main/MainHome";
 import NavbarSmartphone from "../../components/smartphone/navbar/navbarSmartphone";
 import "../../style/navbar.scss";
 
 function Home() {
   return (
     <>
-      <div className="h-full flex flex-col justify-center gap-8">
-        <div className="center">
-          <Photo />
-        </div>
-        <NavbarSmartphone />
-      </div>
+      <Main childComponent={<MainHome />} />
+      <NavbarSmartphone />
     </>
   );
 }

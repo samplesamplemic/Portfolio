@@ -8,56 +8,30 @@ function NavbarSmartphone() {
   const navbarItems: NavbarItems = navbarData;
   return (
     <>
-      <div className="flex justify-around w-full gap-4 z-10 fixed bottom-0 bg-navbarBG rounded-md backdrop-blur-sm bg-opacity-10 border-t border-t-gray-100">
-        {navbarItems.navbarItems.map((navbarItem, index) => {
-          return (
-            <div
-              className="p-2 group"
-              key={index}
-            >
+      <nav className={navbarClassname.navSmartphone}>
+        {/* bg-navbarBG rounded-md backdrop-blur-sm bg-opacity-10 border-t border-t-gray-100 */}
+        <header className={navbarClassname.header}>
+          {navbarItems.navbarItems.map((navbarItem, index) => {
+            return (
               <Link
                 to={navbarItem.link}
-                className={navbarClassname.iconLink}
+                key={index}
               >
                 {
-                  <navbarItem.icon
-                    className={navbarClassname.navLink}
-                    title={navbarItem.title}
-                  />
+                  <span
+                    className={`${navbarClassname.navLink} navLink`}
+                  >
+                    <navbarItem.icon
+                      width={25}
+                      title={navbarItem.title}
+                    />
+                  </span>
                 }
               </Link>
-            </div>
-          );
-        })}
-        {/* <a href="">
-            <Home
-              className="w-6 group-hover:hidden"
-              title="home"
-            />
-            <HomeHover className=" w-6 hidden group-hover:block" />
-          </a>
-        </div>
-        <div className="p-2 group">
-          <a href="">
-            <img
-              src={githubLogo}
-              alt="source"
-              className="w-6 group-hover:hidden"
-            />
-            <img
-              src={githubLogoHover}
-              alt="source"
-              className=" w-6 hidden group-hover:block"
-            />
-          </a>
-        </div>
-        <div className="group p-2">
-          <a href="">
-            <NewspaperIcon className="group-hover:hidden w-6" />
-            <NewspaperIconHover className="group-hover:block w-6 hidden" />
-          </a>
-        </div> */}
-      </div>
+            );
+          })}
+        </header>
+      </nav>
     </>
   );
 }
