@@ -1,11 +1,14 @@
 export const projectsClassname = {
   article: [
     "flex",
-    "flex-row",
+    "sm:flex-row",
+    "flex-col",
     "items-center",
     "text-center",
     "flex-wrap",
-    "md:justify-between",
+    "sm:justify-between",
+    // "w-[100%]",
+    "content-center",
     // "lg:gap-10",
     "gap-y-2",
     "justify-center",
@@ -13,7 +16,7 @@ export const projectsClassname = {
   ].join(" "),
   section: [
     "projects",
-    "md:w-[45%]",
+    "sm:w-[45%]",
     "w-[75%]",
     "flex",
     "flex-col",
@@ -29,8 +32,9 @@ export const projectsClassname = {
   ].join(" "),
   figcaption: ["text-left", "gap-1"].join(" "),
   img: [
-    "w-40",
-    "h-32",
+    "w-[720px]",
+    "h-[200px]",
+    "md:h-[10rem]",
     "object-cover",
     "rounded-md",
     "hover:scale-110",
@@ -76,7 +80,9 @@ export const projectsClassname = {
   svg: [
     "scale-100",
     "rounded-full",
-    "shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]",
+    "hover:shadow-[rgba(30,136,196,1)_1px_1px_10px_0px]",
+    "hover:transition-all",
+    "hover:duration-300",
   ].join(" "),
   p: ["w-full", "text-justify"].join(" "),
   divider: [

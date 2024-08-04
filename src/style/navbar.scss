@@ -95,3 +95,7 @@
 .neonEffectText {
   @extend %myTextShadow;
 }
+
+.navbarSmartphone {
+  clip-path: margin-box;
+}

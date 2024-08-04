@@ -6,7 +6,7 @@ import ProjectsPage from "./pages/smartphone/projects";
 function Smartphone() {
   return (
     <>
-      <div className="h-full md:hidden block">
+      <div className="h-full sm:hidden block">
         <BrowserRouter>
           <Routes>
             <Route

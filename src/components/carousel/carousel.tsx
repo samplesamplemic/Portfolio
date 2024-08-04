@@ -13,12 +13,12 @@ const responsive = {
     slidesToSlide: 3,
   },
   tablet: {
-    breakpoint: { max: 1200, min: 768 },
+    breakpoint: { max: 1200, min: 475 },
     items: 3,
     slidesToSlide: 3,
   },
   mobile: {
-    breakpoint: { max: 767, min: 0 },
+    breakpoint: { max: 475, min: 0 },
     items: 2,
     slidesToSlide: 2,
   },
