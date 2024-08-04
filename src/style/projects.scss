@@ -23,12 +23,19 @@
 .projects {
   .react-multi-carousel-list {
     justify-content: center;
-    padding-block: 0.5rem;
     padding-bottom: 1rem;
+    // padding-block: 0.5rem;
   }
   .react-multi-carousel-item {
     padding: 1rem;
-    padding-inline: 1.5rem;
+    // padding-inline: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .projects {
+    .react-multi-carousel-item {
+      padding-inline: 1.5rem;
+    }
   }
 }
 

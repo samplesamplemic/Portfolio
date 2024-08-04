@@ -12,7 +12,7 @@ export const projectsClassname = {
     // "lg:gap-10",
     "gap-y-2",
     "justify-center",
-    "pb-20",
+    // "pb-20",
   ].join(" "),
   section: [
     "projects",
@@ -32,9 +32,10 @@ export const projectsClassname = {
   ].join(" "),
   figcaption: ["text-left", "gap-1"].join(" "),
   img: [
+    "min-w-[160px]",
     "w-[720px]",
     "h-[200px]",
-    "md:h-[10rem]",
+    "sm:h-[10rem]",
     "object-cover",
     "rounded-md",
     "hover:scale-110",
@@ -51,7 +52,7 @@ export const projectsClassname = {
     "items-center",
     "justify-center",
   ].join(" "),
-  h2: [
+  h3: [
     "flex",
     "justify-around",
     "text-center",
@@ -85,6 +86,18 @@ export const projectsClassname = {
     "hover:duration-300",
   ].join(" "),
   p: ["w-full", "text-justify"].join(" "),
+  h2: [
+    "text-xl",
+    "font-semibold",
+    "flex",
+    "flex-col",
+    "w-fit",
+    "border-b-2",
+    "border-opacity-40",
+    "rounded-sm",
+    "border-b-[3px]",
+    "border-grey",
+  ].join(" "),
   divider: [
     "w-10",
     "h-1",

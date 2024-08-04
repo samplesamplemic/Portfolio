@@ -27,6 +27,9 @@ function Projects() {
         aria-label="Image Carousel"
         className={projectsClassname.article}
       >
+        <span className="flex-[100%]">
+          <h2 className={projectsClassname.h2}>Work</h2>
+        </span>
         {projectsData.projectItems.map((el, index) => {
           return (
             <section
@@ -54,7 +57,7 @@ function Projects() {
                   className={projectsClassname.figcaption}
                 >
                   <header className={projectsClassname.header}>
-                    <h2 className={projectsClassname.h2}>
+                    <h2 className={projectsClassname.h3}>
                       {el.title}
                     </h2>
                     <GithubSvg
