@@ -2,12 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
-    fontFamily: {
-      sansCondensed: [
-        "Encode Sans Semi Condensed",
-        "sans-serif",
-      ],
-    },
+    // fontFamily: {
+    //   sansCondensed: [
+    //     "Encode Sans Semi Condensed",
+    //     "sans-serif",
+    //   ],
+    // },
     // fontSize: {
     //   base: "1.04rem",
     //   lg: "1.125rem",

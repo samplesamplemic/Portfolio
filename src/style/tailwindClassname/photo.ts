@@ -24,10 +24,10 @@ export const photoClassname = {
     "text-secondary",
     "md:text-3xl",
     "text-2xl",
-    "font-base",
+    "font-semibold",
     "tracking-wide",
-    "drop-shadow-[rgba(30,136,196,1)_1px_1px_20px]",
-    "neonEffectText",
+    // "drop-shadow-[rgba(30,136,196,1)_1px_1px_20px]",
+    // "neonEffectText",
   ].join(" "),
   img: [
     "w-20",

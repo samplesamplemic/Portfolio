@@ -6,14 +6,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.01rem;
+  /* letter-spacing: 0.01rem; */
 }
 
 @layer {
   html {
     @apply text-white;
-    @apply font-sansCondensed !important;
+    /* @apply font-sansCondensed !important; */
     @apply h-full;
+    font-family: cursive !important;
   }
 }
 
@@ -38,6 +39,6 @@
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }

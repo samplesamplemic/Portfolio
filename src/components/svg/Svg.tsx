@@ -1,6 +1,7 @@
 import { svgClassname } from "../../style/tailwindClassname/svg";
 
 export const InstagramSvg = (props: {
+  link: string;
   tailwindCss?: string;
 }) => {
   return (
@@ -41,11 +42,14 @@ export const InstagramSvg = (props: {
     </>
   );
 };
-export const LinkedInSvg = (props: { tailwindCss?: string }) => {
+export const LinkedInSvg = (props: {
+  link: string;
+  tailwindCss?: string;
+}) => {
   return (
     <>
       <a
-        href="https://www.linkedin.com/in/michele-la-torre-a8990b235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgJPSISRmTV6NwCJoTDWNNw%3D%3D"
+        href={props.link}
         target="_blank"
       >
         <svg

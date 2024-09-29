@@ -17,7 +17,6 @@ export const aboutMeClassname = {
     "rounded-sm",
     "border-b-[3px]",
     "border-grey",
-    "",
   ].join(" "),
   h3: ["text-lg", "font-semibold", "text-secondary"].join(" "),
 };
